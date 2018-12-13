@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p--you-need-a-different-service",
+    "type": "object",
+    "title": "You are being redirected to our other application site",
+    "additionalProperties": false,
+    "properties": {
+        "you-need-a-different-service": {
+            "type": "string",
+            "classification": "markup",
+            "enum": [
+                "<p><strong>You can continue your application using our existing service.</strong></p>"
+            ],
+            "default": "/enum/0"
+        }
+    }
+}

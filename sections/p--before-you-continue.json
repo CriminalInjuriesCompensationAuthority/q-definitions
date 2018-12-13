@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p--before-you-continue",
+    "type": "object",
+    "title": "Before you continue",
+    "additionalProperties": false,
+    "properties": {
+        "before-you-continue": {
+            "type": "string",
+            "classification": "markup",
+            "enum": [
+                "<p><strong>On the next few pages we will ask questions about the crime.</strong></p><p>We understand talking about the crime may be difficult.</p><p>Organisations such as the Victim's Information Service can offer specialist help and advice.</p>"
+            ],
+            "default": "/enum/0"
+        }
+    }
+}

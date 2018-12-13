@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p--multiple-stop-date",
+    "type": "object",
+    "required": ["q-multiple-stop-date"],
+    "additionalProperties": false,
+    "properties": {
+        "q-multiple-stop-date": {
+            "type": "string",
+            "format": "date-time",
+            "title": "When did it stop?",
+            "errorMessages": {
+                "required": "Enter the date it stopped",
+                "format": "Enter a valid date"
+            }
+        }
+    }
+}

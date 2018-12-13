@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p--summary",
+    "type": "object",
+    "title": "Check your answers before sending your application",
+    "additionalProperties": false,
+    "properties": {
+        "summary": {
+            "type": "string",
+            "classification": "markup",
+            "enum": [
+                "<check-your-answers></check-your-answers>"
+            ],
+            "default": "/enum/0"
+        }
+    }
+}

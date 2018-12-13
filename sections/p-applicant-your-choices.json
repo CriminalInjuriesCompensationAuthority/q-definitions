@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p-applicant-your-choices",
+    "type": "object",
+    "title": "Select the option that applies to you",
+    "required": ["q-your-choices"],
+    "additionalProperties": false,
+    "properties": {
+        "applicant-your-choices": {
+            "type": "string",
+            "classification": "markup",
+            "enum": [
+                "<p><strong>We decide what enquiries to make depending on how the crime affected you.</strong></p><p><stong>Sexual assault or abuse</strong></p><p>Any compensation we pay acknowledges the emotional distress the crime caused you.</p><p>We normally make a decision based on your application and the information we get from the police.</p><p>We will usually make a decision within 4 months.</p><p><strong>Sexual assault or abuse and other injuries or losses</strong></p><p>We can pay compensation for:<ul class=\"govuk-list govuk-list--bullet\"><li>lost earnings because you were unable to work</li><li>physical injuries</li><li>pregnancy, sexually transmitted disease or loss of foetus</li><li>disabling mental injuries that are additional to the distress and mental trauma already suffered</li></ul></p><gds-details title='What is a disabling mental injury?' id='dmi-description'><p>A disabling mental injury has a substantial adverse effect on your day-to-day performance at work or school, your relationships, or your sexual relationships.</p><p>Disabling mental injuries must be confirmed by a psychiatrist or clinical psychologist.</p></gds-details><p>We normally ask to see your medical records. We may also ask a psychiatrist or clinical psychologist to confirm if you have a disabling mental injury.</p><p>We will usually make a decision within 12 months. This is because we may need to examine your medical records, get medical reports and assess any losses.</p><gds-details title='If you need help or support' id='dmi-help'><p>You can contact us for help with your application on 0300 003 3601. Select option 8.</p><p>Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p><p><a href=\"https://www.victimsinformationservice.org.uk/\" target=\"_blank\">contact the Victims' Information Service</a></p></gds-details>"
+            ],
+            "default": "/enum/0"
+        },
+        "q-your-choices": {
+            "title": "Select the option that applies to you",
+            "type": "string",
+            "uniqueItems": true,
+            "items": {
+                "oneOf": [
+                    {
+                        "title": "Sexual assault or abuse",
+                        "enum": ["sa"]
+                    },
+                    {
+                        "title": "Sexual assault or abuse and other injuries or losses",
+                        "enum": ["saoil"]
+                    }
+                ]
+            },
+            "errorMessages": {
+                "required": "Select your choice"
+            }
+        }
+    }
+}

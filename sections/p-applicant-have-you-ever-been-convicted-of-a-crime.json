@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p-applicant-have-you-ever-been-convicted-of-a-crime",
+    "type": "object",
+    "required": ["q-have-you-ever-been-convicted-of-a-crime"],
+    "additionalProperties": false,
+    "properties": {
+        "q-have-you-ever-been-convicted-of-a-crime": {
+            "type": "boolean",
+            "title": "Have you ever been convicted of a crime?",
+            "errorMessages": {
+                "required": "Tell us if you have been convicted of a crime"
+            }
+        },
+        "applicant-have-you-ever-been-convicted-of-a-crime": {
+            "type": "string",
+            "classification": "markup",
+            "enum": [
+                "<gds-details title='How do I know if my conviction is spent?' id='spent-convictions-description'><p>A conviction is spent when a period of time, known as the rehabilitation period, expires.  The length of this period depends on the type and length of your sentence.</p><p>If you were sentenced to 4 years or more in prison in England and Wales, or 30 months or more in Scotland, your conviction will never be spent.</p></gds-details>"
+            ],
+            "default": "/enum/0"
+        }
+    }
+}

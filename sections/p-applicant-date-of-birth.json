@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p-applicant-date-of-birth",
+    "type": "object",
+    "required": ["q-applicant-date-of-birth"],
+    "additionalProperties": false,
+    "properties": {
+        "q-applicant-date-of-birth": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Enter your date of birth",
+            "errorMessages": {
+                "required": "Enter a date",
+                "format": "Enter a valid date"
+            }
+        }
+    }
+}

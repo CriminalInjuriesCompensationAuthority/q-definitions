@@ -1,0 +1,5 @@
+p--living-together-as-family-at-time:
+- goto: p--number-of-attackers
+  if: [==, q-living-together-as-family-at-time, no]
+- goto: p--you-need-a-different-service
+  if: [==, q-living-together-as-family-at-time, yes]

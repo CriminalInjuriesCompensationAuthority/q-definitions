@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p--number-of-attackers",
+    "title": "Number of attackers",
+    "type": "object",
+    "required": ["q-number-of-attackers"],
+    "properties": {
+        "q-number-of-attackers": {
+            "title": "How many attackers were involved in the incident?",
+            "type": "integer",
+            "errorMessages": {
+                "required": "Enter the number of people who attacked you",
+                "type": "Enter a number"
+            }
+        }
+    }
+}

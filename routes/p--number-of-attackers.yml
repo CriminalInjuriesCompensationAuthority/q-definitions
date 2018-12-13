@@ -1,0 +1,2 @@
+p--number-of-attackers:
+- goto: p--attacker-name

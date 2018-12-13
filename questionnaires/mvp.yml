@@ -1,0 +1,32 @@
+---
+template-name: apply-for-compensation
+start-page: p-applicant-declaration
+pages:
+- p-applicant-declaration
+- p-applicant-are-you-a-british-citizen
+- p-applicant-over-18
+- p--you-need-a-different-service
+- p--who-is-applying
+- p-applicant-were-you-a-victim
+- p-applicant-impact-on-you
+- p-applicant-your-choices
+- p--was-the-crime-reported-to-the-police
+- p--when-was-the-crime-reported
+- p--when-did-the-crime-happen
+- p--crime-reference-number
+- p--single-or-multiple-incidents
+- p--multiple-start-date
+- p--multiple-stop-date
+- p-applicant-name
+- p-applicant-known-by-other-name
+- p-applicant-other-names-used
+- p-applicant-date-of-birth
+- p--end-of-demo
+- p--not-eligible
+- p--summary
+
+
+# - p--incident-location-country
+# - p--living-together-as-family-at-time
+# - p--number-of-attackers
+# - p--attacker-name
