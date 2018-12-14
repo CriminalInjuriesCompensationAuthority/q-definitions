@@ -1,43 +1,18 @@
 {
-  "_from": "git+https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git",
-  "_id": "q-definitions@0.1.0",
-  "_inBundle": false,
-  "_location": "/q-definitions",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "q-definitions@git+https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git",
-    "name": "q-definitions",
-    "escapedName": "q-definitions",
-    "rawSpec": "git+https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git",
-    "saveSpec": "git+https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git",
-    "fetchSpec": "https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "git+https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git#fb872b0a944b5c23c3d13e160d18aaa49b866a77",
-  "_spec": "q-definitions@git+https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git",
-  "_where": "C:\\Git\\co3\\qGen",
-  "author": {
-    "name": "CICA"
-  },
-  "bugs": {
-    "url": "https://github.com/CriminalInjuriesCompensationAuthority/q-definitions/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "",
-  "homepage": "https://github.com/CriminalInjuriesCompensationAuthority/q-definitions#readme",
-  "license": "MIT",
   "name": "q-definitions",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CriminalInjuriesCompensationAuthority/q-definitions.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "CICA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CriminalInjuriesCompensationAuthority/q-definitions/issues"
   },
-  "version": "0.1.0"
+  "homepage": "https://github.com/CriminalInjuriesCompensationAuthority/q-definitions#readme"
 }
