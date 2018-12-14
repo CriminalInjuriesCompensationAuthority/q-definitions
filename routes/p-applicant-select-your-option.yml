@@ -1,5 +1,5 @@
-p-applicant-your-choices:
-- goto: p--was-the-crime-reported-to-the-police
+p-applicant-select-your-option:
+- goto: p--was-the-crime-reported
   if: [==, q-your-choices, sa]
 - goto: p--you-need-a-different-service
   if: [==, q-your-choices, saoil]

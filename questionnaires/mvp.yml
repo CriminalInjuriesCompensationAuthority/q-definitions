@@ -4,27 +4,28 @@ start-page: p-applicant-declaration
 pages:
 - p-applicant-declaration
 - p-applicant-are-you-a-british-citizen
-- p-applicant-over-18
+- p-applicant-are-you-over-18
 - p--you-need-a-different-service
 - p--who-is-applying
 - p-applicant-were-you-a-victim
-- p-applicant-impact-on-you
-- p-applicant-your-choices
-- p--was-the-crime-reported-to-the-police
+- p-applicant-before-you-continue
+- p-applicant-select-your-option
+- p--was-the-crime-reported
 - p--when-was-the-crime-reported
 - p--when-did-the-crime-happen
 - p--crime-reference-number
-- p--single-or-multiple-incidents
-- p--multiple-start-date
-- p--multiple-stop-date
+- p--once-or-over-period-of-time
+- p--period-of-time-start-date
+- p--period-of-time-stop-date
 - p-applicant-name
-- p-applicant-known-by-other-name
+- p-applicant-known-by-other-names
 - p-applicant-other-names-used
 - p-applicant-date-of-birth
+- p-applicant-email-address
+- p-applicant-phone-number
 - p--end-of-demo
-- p--not-eligible
+- p--not-eligible-not-reported
 - p--summary
-
 
 # - p--incident-location-country
 # - p--living-together-as-family-at-time

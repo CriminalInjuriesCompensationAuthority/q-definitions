@@ -1,4 +1,4 @@
-p-applicant-over-18:
+p-applicant-are-you-over-18:
 - goto: p--who-is-applying
   if: [==, q-are-you-18-or-over, yes]
 - goto: p--you-need-a-different-service
