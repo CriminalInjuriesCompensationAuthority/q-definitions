@@ -1,5 +1,0 @@
-p--was-the-crime-reported:
-- goto: p--when-was-the-crime-reported
-  if: [==, q-was-the-crime-reported-to-the-police, yes]
-- goto: p--not-eligible-not-reported
-  if: [==, q-was-the-crime-reported-to-the-police, no]

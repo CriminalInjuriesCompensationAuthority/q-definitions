@@ -1,5 +1,0 @@
-p--once-or-over-period-of-time:
-- goto: p--when-did-the-crime-happen
-  if: [==, q-single-or-multiple-incidents, once]
-- goto: p--period-of-time-start-date
-  if: [==, q-single-or-multiple-incidents, over-a-period-of-time]
