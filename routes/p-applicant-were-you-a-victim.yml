@@ -1,5 +1,0 @@
-p-applicant-were-you-a-victim:
-- goto: p-applicant-before-you-continue
-  if: [==, q-applicant-were-you-a-victim, yes]
-- goto: p--you-need-a-different-service
-  if: [==, q-applicant-were-you-a-victim, no]

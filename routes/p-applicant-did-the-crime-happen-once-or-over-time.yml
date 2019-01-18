@@ -1,0 +1,5 @@
+p-applicant-did-the-crime-happen-once-or-over-time:
+- goto: p-applicant-when-did-the-crime-happen
+ If: [==, q-applicant-did-the-crime-happen-once-or-over-time, Once]
+- goto: p-applicant-when-did-the-crime-start
+ If: [==, q-applicant-did-the-crime-happen-once-or-over-time, Over a period of time]
