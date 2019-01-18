@@ -1,4 +1,0 @@
-p--attacker-name:
-- goto: p--attacker-name
-  if: [answeredLessThan, p--attacker-name, q-number-of-attackers]
-- goto: p--end-of-demo

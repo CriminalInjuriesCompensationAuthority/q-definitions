@@ -1,5 +1,0 @@
-p-applicant-are-you-a-british-citizen:
-- goto: p-applicant-are-you-over-18
-  if: [==, q-applicant-are-you-a-british-citizen, yes]
-- goto: p--you-need-a-different-service
-  if: [==, q-applicant-are-you-a-british-citizen, no]

@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p-applicant-other-names-used",
+    "type": "object",
+    "required": ["q-applicant-what-other-names-have-you-used"],
+    "properties": {
+        "q--applicant-what-other-names-have-you-used": {
+            "title": "What other names have you used?",
+            "type": "string",
+            "errorMessages": {
+                "required": "Enter any other names you have previously used"
+            }
+        }
+    }
+}

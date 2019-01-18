@@ -1,5 +1,0 @@
-p-offender-do-you-know-the-offenders-name:
-- goto: p-applicant-have-you-applied-to-us-before
-  If: [==, q-offender-do-you-know-the-offenders-name, No]
-- goto: p-offender-enter-offenders-name
-  If: [==, q-offender-do-you-know-the-offenders-name, Yes]

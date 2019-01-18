@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://localhost:3000/schema/definitions/p-applicant-known-by-other-name",
+    "type": "object",
+    "required": ["q-applicant-have-you-been-known-by-any-other-names"],
+    "properties": {
+        "q-applicant-have-you-been-known-by-any-other-names": {
+            "type": "boolean",
+            "title": "Have you ever been known by any other names?",
+            "errorMessages": {
+                "required": "Select if you have been known by another name"
+            }
+        }
+    }
+}
