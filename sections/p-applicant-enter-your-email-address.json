@@ -5,7 +5,7 @@
     "required": ["q-applicant-email-address"],
     "additionalProperties": false,
     "properties": {
-        "q-applicant-date-of-birth": {
+        "q-applicant-email-address": {
             "type": "string",
             "title": "Enter your email address",
             "errorMessages": {
