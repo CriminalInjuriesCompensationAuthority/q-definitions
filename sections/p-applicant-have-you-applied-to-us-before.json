@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost:3000/schema/definitions/p-applicant-have-you-applied-to-us-before",
+  "type": "object",
+  "required": ["q-applicant-have-you-applied-to-us-before"],
+  "properties": {
+    "q-applicant-have-you-applied-to-us-before": {
+      "type": "boolean",
+      "title": "Have you applied to us before?"
+    }
+  }
+}
