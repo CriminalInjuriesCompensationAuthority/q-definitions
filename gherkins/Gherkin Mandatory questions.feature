@@ -41,7 +41,7 @@ Feature: Error messages on mandatory questions
             | p-applicant-enter-your-email-address                                  | q-applicant-enter-your-email-address                                  | Enter your email address                                                         |
             | p-applicant-enter-your-address                                        | q-applicant-building-and-street                                       | Enter the building and street where you live                                     |
             | p-applicant-enter-your-address                                        | q-applicant-town-or-city                                              | Enter the town or city where you live                                            |
-            | p-applicant-enter-your-telephone-number                               | p-applicant-enter-your-telephone-number                               | Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192 |
+            | p-applicant-enter-your-telephone-number                               | q-applicant-telephone-number                                          | Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192 |
 
     Scenario: User has not answered a mandatory question
         Given I am on p-offender-describe-contact-with-offender

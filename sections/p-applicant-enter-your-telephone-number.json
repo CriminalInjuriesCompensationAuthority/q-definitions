@@ -5,11 +5,11 @@
     "required": ["p-applicant-phone-number"],
     "additionalProperties": false,
     "properties": {
-        "q-applicant-date-of-birth": {
+        "q-applicant-telephone-number": {
           "type": "string",
           "title": "Enter your telephone number",
             "errorMessages": {
-               "required": "Enter a telephone number"
+               "required": "Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192"
             }
         }
     }
