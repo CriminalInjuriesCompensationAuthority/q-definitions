@@ -1,1 +1,25 @@
-{}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost:3000/schema/definitions/p-offender-describe-contact-with-offender",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "q-offender-contact-description": {
+      "title": "If you have contact with the offender, describe it below",
+      "type": "string",
+      "maxLength": 500
+    }
+  },
+  "q-offender-no-contact-with-offender": {
+    "type": "string",
+    "uniqueItems": true,
+    "items": {
+      "oneOf": [
+        {
+          "title": "I have no contact with the offender",
+          "enum": ["none"]
+        }
+      ]
+    }
+  }
+}
