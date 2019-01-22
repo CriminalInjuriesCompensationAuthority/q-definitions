@@ -1,5 +1,5 @@
 p--was-the-crime-reported-to-police:
 - goto: p-applicant-you-cannot-get-compensation
   If: [==, q--was-crime-reported-to-police, No]
-- goto:  p--when-was-the-crime-reported-to-police
+- goto: p--when-was-the-crime-reported-to-police
   If: [==, q--was-crime-reported-to-police, Yes]

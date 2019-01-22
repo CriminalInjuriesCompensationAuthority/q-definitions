@@ -34,7 +34,7 @@ pages:
 - p-applicant-enter-your-telephone-number
 - p--check-your-answers
 - p--confirmation
-#The pages below are dependant on answers to questions so only appear when required
+
 - p-applicant-redirect-to-our-other-application
 - p-applicant-you-cannot-get-compensation
 
