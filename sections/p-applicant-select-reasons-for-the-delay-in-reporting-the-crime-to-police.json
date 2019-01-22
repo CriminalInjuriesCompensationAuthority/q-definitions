@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://localhost:3000/schema/definitions/p-applicant-select-reasons-for-the-delay-in-making-your-application",
+  "id": "http://localhost:3000/schema/definitions/p-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police",
   "type": "object",
   "title": "Select the option that applies to you",
-  "required": ["q-applicant-reason-for-delay"],
+  "required": ["q-applicant-reason-for-delay-in-reporting-crime"],
   "additionalProperties": false,
   "properties": {
-    "q-applicant-reason-for-delay": {
+    "q-applicant-reason-for-delay-in-reporting-crime": {
       "title": "Select reasons for the delay in reporting the crime to the police",
       "type": "string",
       "uniqueItems": true,
