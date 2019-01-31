@@ -9,7 +9,7 @@
             "type": "string",
             "title": "Enter your email address",
             "errorMessages": {
-                "required": "Enter an email address"
+                "required": "Enter your email address"
             }
         }
     }

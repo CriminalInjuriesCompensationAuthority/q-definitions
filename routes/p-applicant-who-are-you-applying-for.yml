@@ -1,5 +1,5 @@
 p-applicant-who-are-you-applying-for:
 - goto: p-applicant-redirect-to-our-other-application
-  If: [==, q-applicant-who-are-you-applying-for, Someone else]
+  if: [==, q-applicant-who-are-you-applying-for, Someone else]
 - goto: p-applicant-were-you-a-victim-of-sexual-assault-or-abuse
-  If: [==, q-applicant-who-are-you-applying-for, Myself]
+  if: [==, q-applicant-who-are-you-applying-for, Myself]

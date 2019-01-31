@@ -22,7 +22,7 @@
                 ]
             },
             "errorMessages": {
-                "required": "Tell us who you are applying for"
+                "required": "Select Myself if you are the person applying for compensation"
             }
         }
     }

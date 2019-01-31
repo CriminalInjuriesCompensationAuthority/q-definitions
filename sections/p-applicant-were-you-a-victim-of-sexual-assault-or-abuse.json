@@ -9,7 +9,7 @@
             "type": "boolean",
             "title": "Were you a victim of sexual assault or abuse?",
             "errorMessages": {
-                "required": "Select the appropriate option"
+                "required": "Select yes if you were a victim of sexual assault or abuse"
             }
         }
     }

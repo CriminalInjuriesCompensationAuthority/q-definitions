@@ -5,8 +5,21 @@
   "required": ["q-applicant-have-you-applied-to-us-before"],
   "properties": {
     "q-applicant-have-you-applied-to-us-before": {
-      "type": "boolean",
-      "title": "Have you applied to us before?"
+      "title": "Have you applied to us before?",
+      "type": "string",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "title": "Yes",
+            "enum": ["yes"]
+          },
+          {
+            "title": "No",
+            "enum": ["no"]
+          }
+        ]
+      }
     }
   }
 }

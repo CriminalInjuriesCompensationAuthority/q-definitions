@@ -4,11 +4,11 @@
     "type": "object",
     "required": ["q-applicant-what-other-names-have-you-used"],
     "properties": {
-        "q--applicant-what-other-names-have-you-used": {
-            "title": "What other names have you used?",
+        "q-applicant-what-other-names-have-you-used": {
             "type": "string",
+            "title": "What other names have you used?",
             "errorMessages": {
-                "required": "Enter any other names you have previously used"
+                "required": "Enter the other names you have used"
             }
         }
     }

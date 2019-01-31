@@ -1,5 +1,5 @@
 p-applicant-are-you-18-or-over:
 - goto: p-applicant-redirect-to-our-other-application
-  If: [==, q-applicant-are-you-18-or-over, No]
+  if: [==, q-applicant-are-you-18-or-over, No]
 - goto: p-applicant-who-are-you-applying-for
-  If: [==, q-applicant-are-you-18-or-over, Yes]
+  if: [==, q-applicant-are-you-18-or-over, Yes]

@@ -25,6 +25,7 @@ pages:
 - p-offender-describe-contact-with-offender
 - p-applicant-have-you-applied-to-us-before
 - p-applicant-have-you-applied-for-or-received-any-other-compensation
+- p-applicant-other-compensation-details
 - p-applicant-enter-your-name
 - p-applicant-have-you-been-known-by-any-other-names
 - p-applicant-what-other-names-have-you-used
@@ -34,7 +35,5 @@ pages:
 - p-applicant-enter-your-telephone-number
 - p--check-your-answers
 - p--confirmation
-
 - p-applicant-redirect-to-our-other-application
 - p-applicant-you-cannot-get-compensation
-
