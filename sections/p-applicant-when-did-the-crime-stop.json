@@ -7,7 +7,7 @@
     "properties": {
         "q-applicant-when-did-the-crime-stop": {
             "type": "string",
-            "format": "date-time",
+            "format": "date-time-no-day",
             "title": "When did it stop?",
             "errorMessages": {
                 "required": "Enter the date the crime started and include a month and year",

@@ -12,14 +12,18 @@
         "oneOf": [
           {
             "title": "Yes",
-            "enum": ["yes"]
+            "enum": ["Yes"],
+            "conditional": {
+              "html": "<div class=\"govuk-form-group\"><label class=\"govuk-label\" for=\"previous-reference\">Enter your previous reference number if you know it (optional)</label><input class=\"govuk-input govuk-!-width-full\" id=\"previous-reference\" name=\"previous-reference\" type=\"text\"></div>"
+            }
           },
           {
             "title": "No",
-            "enum": ["no"]
+            "enum": ["No"]
           }
         ]
       }
     }
   }
 }
+
