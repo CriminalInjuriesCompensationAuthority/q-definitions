@@ -8,7 +8,7 @@
             "type": "boolean",
             "title": "Have you ever been known by any other names?",
             "errorMessages": {
-                "required": "Select if you have been known by another name"
+                "required": "Select yes if you have been known by any other names"
             }
         }
     }

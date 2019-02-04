@@ -9,7 +9,7 @@
             "type": "boolean",
             "title": "Are you 18 or over?",
             "errorMessages": {
-                "required": "Tell us if you are old enough"
+                "required": "Select yes if you are over 18"
             }
         }
     }

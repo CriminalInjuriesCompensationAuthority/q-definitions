@@ -9,7 +9,7 @@
             "type": "boolean",
             "title": "Are you a British citizen or EU national?",
             "errorMessages": {
-                "required": "You need to tell us if you are a British citizen"
+                "required": "Select yes if you are a British citizen or EU national"
             }
         }
     }

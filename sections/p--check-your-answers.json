@@ -1,17 +1,154 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "http://localhost:3000/schema/definitions/p--summary",
+    "id": "http://localhost:3000/schema/definitions/p--check-your-answers",
     "type": "object",
     "title": "Check your answers before sending your application",
     "additionalProperties": false,
     "properties": {
-        "summary": {
+        "your-details": {
+            "title": "Your details",
+            "classes": "govuk-!-margin-bottom-9",
             "type": "string",
-            "classification": "markup",
-            "enum": [
-                "<check-your-answers></check-your-answers>"
-            ],
-            "default": "/enum/0"
+            "classification": "summary",
+            "rows": [
+                {
+                    "key": "Name" ,
+                    "value": "Mr Barry Piccinni" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Date Of Birth",
+                    "value": "06 September 1987",
+                    "path": "#"
+                },
+                {
+                    "key": "Email address" ,
+                    "value": "barrypiccinni@gmail.com" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Address" ,
+                    "value": "6B Orchard Avenue, Ayr, KA7 3EJ" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Telephone Number" ,
+                    "value": "07799 126816" ,
+                    "path": "#"
+                }
+            ]
+        },
+        "your-eligibility": {
+            "title": "Your eligibility",
+            "classes": "govuk-!-margin-bottom-9",
+            "type": "string",
+            "classification": "summary",
+            "rows":[
+                {
+                    "key": "Are you a British citizen or EU national?" ,
+                    "value": "Yes" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Are you 18 or over?" ,
+                    "value": "Yes" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Who are you applying for?" ,
+                    "value": "Myself" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Were you a victim of sexual assault or abuse?" ,
+                    "value": "Yes" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Select the option that applies to you" ,
+                    "value": "Sexual assault or abuse" ,
+                    "path": "#"
+                }
+            ]
+        },
+        "about-the-crime": {
+            "title": "About the crime",
+            "classes": "govuk-!-margin-bottom-9",
+            "type": "string",
+            "classification": "summary",
+            "rows":[
+                {
+                    "key": "Did the crime happen once or over a period of time?" ,
+                    "value": "Once" ,
+                    "path": "#"
+                },
+                {
+                    "key": "When did the crime happen?" ,
+                    "value": "01 January 2019" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Do you know the name of the offender?" ,
+                    "value": "No" ,
+                    "path": "#"
+                },
+                {
+                    "key": "If you have contact with the offender, describe it below" ,
+                    "value": "" ,
+                    "path": "#"
+                }
+            ]
+        },
+        "police-report": {
+            "title": "Police report",
+            "classes": "govuk-!-margin-bottom-9",
+            "type": "string",
+            "classification": "summary",
+            "rows": [
+                {
+                    "key": "Was the crime reported to the police?",
+                    "value": "Yes",
+                    "path": "#"
+                },
+                {
+                    "key": "When was the crime reported to police?",
+                    "value": "01 January 2019",
+                    "path": "#"
+                },
+                {
+                    "key": "What police force is dealing with the crime?",
+                    "value": "",
+                    "path": "#"
+                },
+                {
+                    "key": "Crime reference number?",
+                    "value": "19/000000",
+                    "path": "#"
+                }
+            ]
+        },
+        "other-compensation": {
+            "title": "Other compensation",
+            "classes": "govuk-!-margin-bottom-9",
+            "type": "string",
+            "classification": "summary",
+            "rows":[
+                {
+                    "key": "Have you applied to us before?" ,
+                    "value": "No" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Have you applied for or received any other form of compensation?" ,
+                    "value": "No" ,
+                    "path": "#"
+                },
+                {
+                    "key": "Briefly explain why not" ,
+                    "value": "Unaware I could claim" ,
+                    "path": "#"
+                }
+            ]
         }
     }
 }

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost:3000/schema/definitions/p-applicant-have-you-applied-for-or-received-any-other-compensation",
+  "type": "object",
+  "required": ["q-applicant-have-you-applied-for-or-received-any-other-compensation"],
+  "properties": {
+    "q-applicant-have-you-applied-for-or-received-any-other-compensation": {
+      "type": "string",
+      "title": "Have you applied for or received any other form of compensation?",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "title": "Yes",
+            "enum": ["yes"]
+          },
+          {
+            "title": "No",
+            "enum": ["no"]
+          }
+        ]
+      }
+    }
+  }
+}

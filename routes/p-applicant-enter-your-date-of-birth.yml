@@ -1,4 +1,4 @@
 p-applicant-enter-your-date-of-birth:
 - goto: p-applicant-redirect-to-our-other-application
-  If: [==, q-applicant-enter-your-date-of-birth, date < 18 years from today]
+  if: [==, q-applicant-enter-your-date-of-birth, date < 18 years from today]
 - goto: p-applicant-enter-your-email-address

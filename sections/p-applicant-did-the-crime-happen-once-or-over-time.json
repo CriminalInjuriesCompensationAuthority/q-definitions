@@ -22,7 +22,7 @@
                 ]
             },
             "errorMessages": {
-                "required": "please select an option"
+                "required": "Select Once or Over a period of time"
             }
         }
     }
