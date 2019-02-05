@@ -1,5 +1,5 @@
 p-applicant-have-you-been-known-by-any-other-names:
 - goto: p-applicant-enter-your-date-of-birth
-  if: [==, q-applicant-have-you-been-known-by-any-other-names, No]
+  if: [==, q-applicant-have-you-been-known-by-any-other-names, no]
 - goto: p-applicant-what-other-names-have-you-used
-  if: [==, q-applicant-have-you-been-known-by-any-other-names, Yes]
+  if: [==, q-applicant-have-you-been-known-by-any-other-names, yes]

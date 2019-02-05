@@ -22,11 +22,11 @@
                 "oneOf": [
                     {
                         "title": "Option 1: Sexual assault or abuse",
-                        "enum": ["sa"]
+                        "enum": ["opt1"]
                     },
                     {
                         "title": "Option 2: Sexual assault or abuse and other injuries or losses",
-                        "enum": ["saoil"]
+                        "enum": ["opt2"]
                     }
                 ]
             },
