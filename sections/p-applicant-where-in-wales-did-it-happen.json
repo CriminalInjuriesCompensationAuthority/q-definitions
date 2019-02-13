@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost:3000/schema/definitions/p-applicant-where-in-england-did-it-happen",
+  "type": "object",
+  "required": ["q-applicant-where-in-wales-did-it-happen"],
+  "additionalProperties": false,
+  "properties": {
+    "q-applicant-where-in-wales-did-it-happen": {
+      "title": "Where in Wales did the crime happen?",
+      "type": "string",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "title": "Cardiff",
+            "enum": ["cardiff"]
+          },
+          {
+            "title": "Swansea",
+            "enum": ["swansea"]
+          },
+          {
+            "title": "Newport",
+            "enum": ["newport"]
+          },
+          {
+            "title": "Somewhere else",
+            "enum": ["somewhere-else"]
+          }
+        ]
+      },
+      "errorMessages": {
+        "required": "please select an option"
+      }
+    }
+  }
+}

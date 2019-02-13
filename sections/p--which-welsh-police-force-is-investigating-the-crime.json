@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost:3000/schema/definitions/p--which-welsh-police-force-is-investigating-the-crime",
+  "type": "object",
+  "required": ["q--which-welsh-police-force-is-investigating-the-crime"],
+  "additionalProperties": false,
+  "properties": {
+    "q--which-welsh-police-force-is-investigating-the-crime": {
+      "title": "What police force is dealing with the crime?",
+      "type": "string",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "title": "Cardiff",
+            "enum": ["cardiff"]
+          },
+          {
+            "title": "Swansea",
+            "enum": ["swansea"]
+          },
+          {
+            "title": "Newport",
+            "enum": ["newport"]
+          }
+        ]
+      },
+      "errorMessages": {
+        "required": "please select an option"
+      }
+    }
+  }
+}

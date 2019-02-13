@@ -5,7 +5,7 @@
     "required": ["q-applicant-where-did-the-crime-happen"],
     "additionalProperties": false,
     "properties": {
-        "q-single-or-multiple-incidents": {
+        "q-applicant-where-did-the-crime-happen": {
             "title": "Where did the crime happen?",
             "type": "string",
             "uniqueItems": true,
