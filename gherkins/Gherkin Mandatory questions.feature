@@ -24,8 +24,16 @@ Feature: Error messages on mandatory questions
             | p-applicant-when-did-the-crime-happen                                 | q-applicant-when-did-the-crime-happen                                 | Enter the date the crime happened and include a day, month and year              |
             | p-applicant-when-did-the-crime-start                                  | q-applicant-when-did-the-crime-start                                  | Enter the date the crime started and include a month and year                    |
             | p-applicant-when-did-the-crime-stop                                   | q-applicant-when-did-the-crime-stop                                   | Enter the date the crime stopped and include a month and year                    |
-            | p-applicant-where-did-the-crime-happen                                | q-applicant-where-did-the-crime-happen                                |                                                                                  |                                                                                
-            | p--what-police-force-is-dealing-with-the-crime                        | q--what-police-force-is-dealing-with-the-crime                        |                                                                                  |
+            | p-applicant-where-did-the-crime-happen                                | q-applicant-where-did-the-crime-happen                                | Select England, Scotland, Wales or Somewhere else                                |
+            | p-applicant-where-in-england-did-it-happen                            | q-applicant-english-town-or-city                                      | Enter the town or city where the crime happened                                  |
+            | p-applicant-where-in-england-did-it-happen                            | q-applicant-english-location                                          | Enter the name of a street, business, building or nearby local landmark          |
+            | p-applicant-where-in-scotland-did-it-happen                           | q-applicant-scottish-town-or-city                                     | Enter the town or city where the crime happened                                  |
+            | p-applicant-where-in-scotland-did-it-happen                           | q-applicant-scottish-location                                         | Enter the name of a street, business, building or nearby local landmark          |
+            | p-applicant-where-in-wales-did-it-happen                              | q-applicant-welsh-town-or-city                                        | Enter the town or city where the crime happened                                  |
+            | p-applicant-where-in-wales-did-it-happen                              | q-applicant-welsh-location                                            | Enter the name of a street, business, building or nearby local landmark          |
+            | p--which-english-police-force-is-investigating-the-crime              | q--which-english-police-force-is-investigating-the-crime              | Select a police force from the list                                              |
+            | p--which-police-scotland-division-is-investigating-the-crime          | q--which-police-scotland-division-is-investigating-the-crime          | Select a Police Scotland division                                                |
+            | p--which-welsh-police-force-is-investigating-the-crime                | q--which-welsh-police-force-is-investigating-the-crime                | Select a police force                                                            |
             | p-offender-do-you-know-the-name-of-the-offender                       | q-offender-do-you-know-the-name-of-the-offender                       | Select yes if you know the offender's name                                       |
             | p-offender-enter-offenders-name                                       | q-offender-enter-offenders-name                                       | Enter the offender's name                                                        |
             | p-applicant-have-you-applied-to-us-before                             | q-applicant-have-you-applied-to-us-before                             |                                                                                  |                                                                                  
@@ -41,11 +49,4 @@ Feature: Error messages on mandatory questions
             | p-applicant-enter-your-email-address                                  | q-applicant-enter-your-email-address                                  | Enter your email address                                                         |
             | p-applicant-enter-your-address                                        | q-applicant-building-and-street                                       | Enter the building and street where you live                                     |
             | p-applicant-enter-your-address                                        | q-applicant-town-or-city                                              | Enter the town or city where you live                                            |
-            | p-applicant-enter-your-telephone-number                               | q-applicant-telephone-number                                          | Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192 |
-
-    Scenario: User has not answered a mandatory question
-        Given I am on p-offender-describe-contact-with-offender
-        When I click continue
-        And I have not answered q-offender-describe-contact-with-offender
-        Or I have not answered q-offender-i-have-no-contact-with-offender
-        Then I will see this error message "Enter details of any contact you have with the offender"
+            | p-applicant-enter-your-telephone-number                               | q-applicant-enter-your-telephone-number                               | Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192 |
