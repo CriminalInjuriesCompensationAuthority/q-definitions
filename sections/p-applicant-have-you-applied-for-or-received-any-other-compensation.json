@@ -7,18 +7,8 @@
     "q-applicant-have-you-applied-for-or-received-any-other-compensation": {
       "type": "string",
       "title": "Have you applied for or received any other form of compensation?",
-      "uniqueItems": true,
-      "items": {
-        "oneOf": [
-          {
-            "title": "Yes",
-            "enum": ["yes"]
-          },
-          {
-            "title": "No",
-            "enum": ["no"]
-          }
-        ]
+      "errorMessages": {
+        "required": "Select yes if you have applied for or received any other form of compensation"
       }
     }
   }

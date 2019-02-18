@@ -1,9 +1,9 @@
 p-applicant-where-did-the-crime-happen:
 - goto: p-applicant-where-in-england-did-it-happen
-  If: [==, q-applicant-where-did-crime-happen, England]
+  if: [==, q-applicant-where-did-the-crime-happen, england]
 - goto: p-applicant-where-in-scotland-did-it-happen
-  If: [==, q-applicant-where-did-crime-happen, Scotland]
+  if: [==, q-applicant-where-did-the-crime-happen, scotland]
 - goto: p-applicant-where-in-wales-did-it-happen
-  If: [==, q-applicant-where-did-crime-happen, Wales]
+  if: [==, q-applicant-where-did-the-crime-happen, wales]
 - goto: p--you-need-to-contact-us
-  If: [==, q-applicant-where-did-crime-happen, Somewhere else]
+  if: [==, q-applicant-where-did-the-crime-happen, somewhere-else]

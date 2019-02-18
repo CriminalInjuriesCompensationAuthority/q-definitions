@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost:3000/schema/definitions/p--which-scottish-police-force-is-investigating-the-crime",
+  "title": "What police force is dealing with the crime?",
+  "type": "object",
+  "required": ["q--which-scottish-police-force-is-investigating-the-crime"],
+  "additionalProperties": false,
+  "properties": {
+    "q--which-scottish-police-force-is-investigating-the-crime": {
+      "type": "string",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "title": "Argyll and West Dunbartonshire",
+            "enum": ["argyll"]
+          },
+          {
+            "title": "Ayrshire",
+            "enum": ["ayrshire"]
+          },
+          {
+            "title": "British Transport Police",
+            "enum": ["transport"]
+          },
+          {
+            "title": "Dumfries and Galloway",
+            "enum": ["dumfries"]
+          },
+          {
+            "title": "Edinburgh",
+            "enum": ["edinburgh"]
+          },
+          {
+            "title": "Fife",
+            "enum": ["fife"]
+          },
+          {
+            "title": "Forth Valley",
+            "enum": ["forthValley"]
+          },
+          {
+            "title": "Greater Glasgow",
+            "enum": ["glasgow"]
+          },
+          {
+            "title": "Highland and Islands",
+            "enum": ["highlands"]
+          },
+          {
+            "title": "Lanarkshire",
+            "enum": ["lanarkshire"]
+          },
+          {
+            "title": "North East",
+            "enum": ["northEast"]
+          },
+          {
+            "title": "Renfrewshire and Inverclyde",
+            "enum": ["renfrewshire"]
+          },
+          {
+            "title": "Tayside",
+            "enum": ["tayside"]
+          },
+          {
+            "title": "The Lothians and Scottish Borders",
+            "enum": ["lothians"]
+          }
+        ]
+      },
+      "errorMessages": {
+        "required": "Select a Police Scotland division "
+      }
+    }
+  }
+}
