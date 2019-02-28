@@ -6,7 +6,7 @@ let output = {
     "you-need-a-different-service": {
       "type": "string",
       "classification": "markup",
-      "const": "<p><strong>You can continue your application using our existing service.</strong></p>"
+      "const": `<p><strong>You can continue your application using our existing service.</strong></p>`
     }
   }
 };
