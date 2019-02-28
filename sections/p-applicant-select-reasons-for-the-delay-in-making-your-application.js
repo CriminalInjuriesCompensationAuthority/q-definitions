@@ -1,4 +1,4 @@
-let output = {
+const output = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "title": "Select the option that applies to you",
@@ -6,7 +6,7 @@ let output = {
   "properties": {
     "q-applicant-reason-for-delay-in-application": {
       "title": "Select reasons for the delay in making your application",
-      "type": "string",
+      "type": "array",
       "anyOf": [
         {
           "title": "I was under 18",

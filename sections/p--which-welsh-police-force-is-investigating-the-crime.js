@@ -1,4 +1,4 @@
-let output = {
+const output = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "What police force is dealing with the crime?",
   "type": "object",

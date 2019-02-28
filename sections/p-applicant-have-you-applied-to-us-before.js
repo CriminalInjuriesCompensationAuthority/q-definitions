@@ -1,4 +1,4 @@
-let output = {
+const output = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "required": ["q-applicant-have-you-applied-to-us-before"],

@@ -1,4 +1,4 @@
-let output = {
+const output = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "title": "Select the option that applies to you",
@@ -6,7 +6,7 @@ let output = {
   "properties": {
     "q-applicant-reason-for-delay-in-reporting-crime": {
       "title": "Select reasons for the delay in reporting the crime to the police",
-      "type": "string",
+      "type": "array",
       "anyOf": [
         {
           "title": "I was under 18",
@@ -27,8 +27,9 @@ let output = {
     },
     "q-applicant-explain-delay-reasons": {
       "title": "Briefly explain these reasons",
-      "type": "string",
-      "maxLength": 500
+        "type": "string",
+        "classification": "textarea",
+        "rows": "5"
     }
   }
 };
