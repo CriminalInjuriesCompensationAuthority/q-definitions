@@ -3,6 +3,7 @@ const output = {
   "type": "object",
   "title": "Enter your address",
   "required": ["q-applicant-building-and-street", "q-applicant-town-or-city"],
+  "additionalProperties": false,
   "properties": {
     "q-applicant-building-and-street": {
       "type": "string",

@@ -3,6 +3,7 @@ const output = {
   "type": "object",
   "title": "Select the option that applies to you",
   "required": ["q-applicant-reason-for-delay-in-application"],
+  "additionalProperties": false,
   "properties": {
     "q-applicant-reason-for-delay-in-application": {
       "title": "Select reasons for the delay in making your application",

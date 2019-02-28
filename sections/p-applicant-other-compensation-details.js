@@ -3,6 +3,7 @@ const output = {
     "title": "Other compensation",
     "type": "object",
     "required": ["q-who-did-you-apply-for-compensation-to", "q-how-much-compensation-did-you-get"],
+    "additionalProperties": false,
     "properties": {
         "q-who-did-you-apply-for-compensation-to": {
             "type": "string",

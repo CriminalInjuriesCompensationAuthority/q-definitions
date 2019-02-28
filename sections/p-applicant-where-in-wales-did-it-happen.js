@@ -3,6 +3,7 @@ const output = {
   "type": "object",
   "title": "Where in Wales did it happen?",
   "required": ["q-applicant-welsh-town-or-city", "q-applicant-welsh-location"],
+  "additionalProperties": false,
   "properties": {
     "q-applicant-welsh-town-or-city": {
       "type": "string",

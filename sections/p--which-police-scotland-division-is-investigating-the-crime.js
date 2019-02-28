@@ -3,6 +3,7 @@ const output = {
   "title": "What police force is dealing with the crime?",
   "type": "object",
   "required": ["q--which-scottish-police-force-is-investigating-the-crime"],
+  "additionalProperties": false,
   "properties": {
     "q--which-scottish-police-force-is-investigating-the-crime": {
       "type": "string",

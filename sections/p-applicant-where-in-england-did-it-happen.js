@@ -3,6 +3,7 @@ const output = {
   "type": "object",
   "title": "Where in England did it happen?",
   "required": ["q-applicant-english-town-or-city", "q-applicant-english-location"],
+  "additionalProperties": false,
   "properties": {
     "q-applicant-english-town-or-city": {
       "type": "string",

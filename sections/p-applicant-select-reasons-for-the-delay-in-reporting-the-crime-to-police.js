@@ -3,6 +3,7 @@ const output = {
   "type": "object",
   "title": "Select the option that applies to you",
   "required": ["q-applicant-reason-for-delay-in-reporting-crime"],
+  "additionalProperties": false,
   "properties": {
     "q-applicant-reason-for-delay-in-reporting-crime": {
       "title": "Select reasons for the delay in reporting the crime to the police",

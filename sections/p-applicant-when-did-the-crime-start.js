@@ -2,6 +2,7 @@ const output = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "required": ["q-applicant-when-did-the-crime-start"],
+    "additionalProperties": false,
     "properties": {
         "q-applicant-when-did-the-crime-start": {
             "type": "string",

@@ -2,6 +2,7 @@ const output = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "required": ["q-applicant-who-are-you-applying-for"],
+    "additionalProperties": false,
     "properties": {
         "q-applicant-who-are-you-applying-for": {
             "title": "Who are you applying for?",

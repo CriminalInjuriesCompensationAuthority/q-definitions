@@ -2,6 +2,7 @@ const output = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "title": "Declaration",
+    "additionalProperties": false,
     "properties": {
       "applicant-declaration": {
       "type": "string",

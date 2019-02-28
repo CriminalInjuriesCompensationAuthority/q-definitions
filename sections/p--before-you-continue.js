@@ -2,6 +2,7 @@ const output = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Before you continue",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "applicant-impact-on-you": {
             "type": "string",

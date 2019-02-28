@@ -3,6 +3,7 @@ const output = {
     "type": "object",
     "title": "Select the option that applies to you",
     "required": ["q-applicant-option"],
+    "additionalProperties": false,
     "properties": {
         "applicant-your-choices": {
             "type": "string",

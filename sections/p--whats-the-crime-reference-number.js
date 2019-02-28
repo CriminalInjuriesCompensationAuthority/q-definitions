@@ -4,6 +4,7 @@ const output = {
     "required": [
         "q-whats-the-crime-reference-number"
     ],
+    "additionalProperties": false,
     "properties": {
         "q-whats-the-crime-reference-number": {
             "title": "What's the crime reference number?",

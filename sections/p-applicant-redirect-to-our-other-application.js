@@ -2,6 +2,7 @@ const output = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "title": "You are being redirected to our other application site",
+  "additionalProperties": false,
   "properties": {
     "you-need-a-different-service": {
       "type": "string",

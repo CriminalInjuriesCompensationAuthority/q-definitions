@@ -2,6 +2,7 @@ const output = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "You need to contact us",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "applicant-declaration": {
       "type": "string",
