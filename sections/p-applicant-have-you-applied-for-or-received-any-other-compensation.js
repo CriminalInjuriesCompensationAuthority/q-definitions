@@ -5,7 +5,7 @@ const output = {
     "additionalProperties": false,
   "properties": {
     "q-applicant-have-you-applied-for-or-received-any-other-compensation": {
-      "type": "string",
+      "type": "boolean",
       "title": "Have you applied for or received any other form of compensation?",
       "errorMessages": {
         "required": "Select yes if you have applied for or received any other form of compensation"

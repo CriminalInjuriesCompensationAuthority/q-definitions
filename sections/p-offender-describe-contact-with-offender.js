@@ -11,7 +11,7 @@ const output = {
     },
     "q-offender-no-contact-with-offender": {
       "type": "array",
-      "oneOf": [
+      "anyOf": [
         {
           "title": "I have no contact with the offender",
           "const": "none"

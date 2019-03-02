@@ -5,18 +5,18 @@ const output = {
     "required": ["q-who-did-you-apply-for-compensation-to", "q-how-much-compensation-did-you-get"],
     "additionalProperties": false,
     "properties": {
-        "q-who-did-you-apply-for-compensation-to": {
+        "q-who-did-you-apply-to": {
             "type": "string",
-            "title": "Who did you apply to?",
+            "title": "Who have you applied to or received compensation from?",
             "errorMessages": {
                 "required": "Tell us who you applied to"
             }
         },
-        "q-how-much-compensation-did-you-get": {
-            "type": "string",
-            "title": "How much compensation did you get, or expect to get?",
+        "q-have-the-made-a-decision": {
+            "type": "boolean",
+            "title": "Have they made a decision?",
             "errorMessages": {
-                "required": "Tell us how much compensation you got, or are expecting to get"
+                "required": "Tell us if a decision has been made"
             }
         }
     }
