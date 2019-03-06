@@ -1,7 +1,8 @@
 ---
 template-name: apply-for-compensation
-start-page: p-applicant-declaration
+start-page: p--start-now
 pages:
+- p--start-now
 - p-applicant-declaration
 - p-applicant-british-citizen-or-eu-national
 - p-applicant-are-you-18-or-over
@@ -18,7 +19,13 @@ pages:
 - p-applicant-when-did-the-crime-stop
 - p-applicant-select-reasons-for-the-delay-in-making-your-application
 - p-applicant-where-did-the-crime-happen
-- p--what-police-force-is-dealing-with-the-crime
+- p-applicant-where-in-england-did-it-happen
+- p-applicant-where-in-scotland-did-it-happen
+- p-applicant-where-in-wales-did-it-happen
+- p--you-need-to-contact-us
+- p--which-english-police-force-is-investigating-the-crime
+- p--which-police-scotland-division-is-investigating-the-crime
+- p--which-welsh-police-force-is-investigating-the-crime
 - p-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police
 - p-offender-do-you-know-the-name-of-the-offender
 - p-offender-enter-offenders-name
