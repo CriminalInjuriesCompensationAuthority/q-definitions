@@ -7,24 +7,28 @@ const output = {
         'q-applicant-reason-for-delay-in-application': {
             title: 'Select reasons for the delay in making your application',
             type: 'array',
-            anyOf: [
-                {
-                    title: 'I was under 18',
-                    const: 'underage'
-                },
-                {
-                    title: 'I was advised to wait',
-                    const: 'wait'
-                },
-                {
-                    title: 'Medical reasons',
-                    const: 'med'
-                },
-                {
-                    title: 'Other reasons',
-                    const: 'other'
-                }
-            ],
+            maxItems: 4,
+            uniqueItems: true,
+            items: {
+                anyOf: [
+                    {
+                        title: 'I was under 18',
+                        const: 'underage'
+                    },
+                    {
+                        title: 'I was advised to wait',
+                        const: 'wait'
+                    },
+                    {
+                        title: 'Medical reasons',
+                        const: 'med'
+                    },
+                    {
+                        title: 'Other reasons',
+                        const: 'other'
+                    }
+                ]
+            },
             errorMessages: {
                 required: 'Select your choice'
             }

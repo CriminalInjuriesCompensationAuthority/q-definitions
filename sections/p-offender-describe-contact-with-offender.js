@@ -10,12 +10,16 @@ const output = {
         },
         'q-offender-no-contact-with-offender': {
             type: 'array',
-            oneOf: [
-                {
-                    title: 'I have no contact with the offender',
-                    const: 'none'
-                }
-            ]
+            maxItems: 1,
+            uniqueItems: true,
+            items: {
+                anyOf: [
+                    {
+                        title: 'I have no contact with the offender',
+                        const: 'none'
+                    }
+                ]
+            }
         }
     }
 };

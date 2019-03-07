@@ -7,20 +7,24 @@ const output = {
         'q-applicant-reason-for-delay-in-reporting-crime': {
             title: 'Select reasons for the delay in reporting the crime to the police',
             type: 'array',
-            anyOf: [
-                {
-                    title: 'I was under 18',
-                    const: 'underage'
-                },
-                {
-                    title: 'Unable to report the crime',
-                    const: 'unable'
-                },
-                {
-                    title: 'Other reasons',
-                    const: 'other'
-                }
-            ],
+            maxItems: 3,
+            uniqueItems: true,
+            items: {
+                anyOf: [
+                    {
+                        title: 'I was under 18',
+                        const: 'underage'
+                    },
+                    {
+                        title: 'Unable to report the crime',
+                        const: 'unable'
+                    },
+                    {
+                        title: 'Other reasons',
+                        const: 'other'
+                    }
+                ]
+            },
             errorMessages: {
                 required: 'Select your choice'
             }
