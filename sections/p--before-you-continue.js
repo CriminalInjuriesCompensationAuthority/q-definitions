@@ -5,7 +5,7 @@ const output = {
     additionalProperties: false,
     properties: {
         'applicant-impact-on-you': {
-            descriptions: `
+            description: `
                 <p class="govuk-body">On the next page we will ask you to select an option based on how the crime affected you.</p>
                 <p class="govuk-body">We appreciate that this may be difficult for you.</p>
                 <h2 class="govuk-heading-m">If you need help or support</h2>
