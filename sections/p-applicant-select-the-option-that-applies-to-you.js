@@ -9,7 +9,9 @@ const output = {
             "type": "string",
             "classification": "markup",
             "const":
-                `<p class="govuk-body-l">We decide what enquiries to make depending on how the crime affected you.</p>
+                `
+                {% from "components/details/macro.njk" import govukDetails %}
+                <p class="govuk-body-l">We decide what enquiries to make depending on how the crime affected you.</p>
                 <h2 class="govuk-heading-m">Option 1: Sexual assault or abuse</h2>
                 <p class="govuk-body">Any compensation we pay acknowledges the emotional distress the crime caused you.</p>
                 <p class="govuk-body">We normally make a decision based on your application and the information we get from the police.</p>
@@ -31,12 +33,12 @@ const output = {
                 <p class="govuk-body">We will usually make a decision within 12 months. This is because we may need to examine your medical records, get medical reports and assess any losses.</p>
                 {{ govukDetails({
                 summaryText: "If you need help or support",
-                text: "
+                text: '
                     <p class="govuk-body">You can contact us for help with your application on 0300 003 3601. Select option 8.</p>
                     <p class="govuk-body">Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>
                     <p class="govuk-body">For practical or emotional support near you <a href="https://www.victimsinformationservice.org.uk/" target="_blank">visit the Victim and Witness Information</a> website.</p>
                     <p class="govuk-body">There is a different website if you live in <a href="https://www.mygov.scot/victim-witness-support/">Scotland</a>.</p>
-                "
+                '
                 }) }}`
         },
         "q-applicant-option": {

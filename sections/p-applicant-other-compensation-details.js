@@ -2,7 +2,7 @@ const output = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Other compensation",
     "type": "object",
-    "required": ["q-who-did-you-apply-for-compensation-to", "q-how-much-compensation-did-you-get"],
+    "required": ["q-who-did-you-apply-to", "q-have-the-made-a-decision"],
     "additionalProperties": false,
     "properties": {
         "q-who-did-you-apply-to": {
