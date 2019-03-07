@@ -10,7 +10,6 @@ const output = {
             "classification": "markup",
             "const":
                 `
-                {% from "components/details/macro.njk" import govukDetails %}
                 <p class="govuk-body-l">We decide what enquiries to make depending on how the crime affected you.</p>
                 <h2 class="govuk-heading-m">Option 1: Sexual assault or abuse</h2>
                 <p class="govuk-body">Any compensation we pay acknowledges the emotional distress the crime caused you.</p>

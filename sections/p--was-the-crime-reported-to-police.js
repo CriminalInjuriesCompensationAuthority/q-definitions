@@ -16,7 +16,6 @@ const output = {
       "classification": "markup",
       "const":
         `
-          {% from "components/details/macro.njk" import govukDetails %}
           {{ govukDetails({
           summaryText: "I do not know if the crime was reported to the police",
           text: '<p>You can contact us for help with your application on 0300 003 3601. Select option 8.</p>

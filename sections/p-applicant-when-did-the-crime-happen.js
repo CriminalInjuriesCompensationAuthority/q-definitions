@@ -1,4 +1,4 @@
-let today = new Date().toISOString();
+const today = new Date().toISOString();
 
 const output = {
     "$schema": "http://json-schema.org/draft-07/schema#",

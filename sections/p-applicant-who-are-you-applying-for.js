@@ -18,7 +18,7 @@ const output = {
                 }
             ],
             "errorMessages": {
-                "required": "Select Myself if you are the person applying for compensation."
+                "required": "Select Myself if you are the person applying for compensation"
             }
         }
     }

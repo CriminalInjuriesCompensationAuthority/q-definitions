@@ -7,10 +7,7 @@ const output = {
       "type": "string",
       "classification": "markup",
       "const":
-        `
-        {% from "components/panel/macro.njk" import govukPanel %}
-        {% from "components/warning-text/macro.njk" import govukWarningText %}
-        <div class="govuk-grid-column-two-thirds">
+        `<div class="govuk-grid-column-two-thirds">
         {{ govukPanel({ 
           titleText: "Application submitted",
           html: "**Reference Number here**"

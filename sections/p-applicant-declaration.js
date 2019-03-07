@@ -7,9 +7,7 @@ const output = {
       "applicant-declaration": {
       "type": "string",
       "classification": "markup",
-      "const":`
-        {% from "components/warning-text/macro.njk" import govukWarningText %}
-        <p><strong>By continuing you confirm that the information you will give is true as far as you know.</strong></p>
+      "const":`<p><strong>By continuing you confirm that the information you will give is true as far as you know.</strong></p>
         {{ govukWarningText({
             text: "You could be prosecuted or get less compensation if you give false or misleading information.",
             iconFallbackText: "Warning"
