@@ -1,15 +1,12 @@
 const output = {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "title": "Select the option that applies to you",
-    "required": ["q-applicant-option"],
-    "additionalProperties": false,
-    "properties": {
-        "applicant-your-choices": {
-            "type": "string",
-            "classification": "markup",
-            "const":
-                `
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    type: 'object',
+    title: 'Select the option that applies to you',
+    required: ['q-applicant-option'],
+    additionalProperties: false,
+    properties: {
+        'applicant-your-choices': {
+            description: `
                 <p class="govuk-body-l">We decide what enquiries to make depending on how the crime affected you.</p>
                 <h2 class="govuk-heading-m">Option 1: Sexual assault or abuse</h2>
                 <p class="govuk-body">Any compensation we pay acknowledges the emotional distress the crime caused you.</p>
@@ -38,23 +35,24 @@ const output = {
                     <p class="govuk-body">For practical or emotional support near you <a href="https://www.victimsinformationservice.org.uk/" target="_blank">visit the Victim and Witness Information</a> website.</p>
                     <p class="govuk-body">There is a different website if you live in <a href="https://www.mygov.scot/victim-witness-support/">Scotland</a>.</p>
                 '
-                }) }}`
+                }) }}
+            `
         },
-        "q-applicant-option": {
-            "title": "Select the option that applies to you",
-            "type": "string",
-            "oneOf": [
+        'q-applicant-option': {
+            title: 'Select the option that applies to you',
+            type: 'string',
+            oneOf: [
                 {
-                    "title": "Option 1: Sexual assault or abuse",
-                    "const": "opt1"
+                    title: 'Option 1: Sexual assault or abuse',
+                    const: 'opt1'
                 },
                 {
-                    "title": "Option 2: Sexual assault or abuse and other injuries or losses",
-                    "const": "opt2"
+                    title: 'Option 2: Sexual assault or abuse and other injuries or losses',
+                    const: 'opt2'
                 }
             ],
-            "errorMessages": {
-                "required": "Select your choice"
+            errorMessages: {
+                required: 'Select your choice'
             }
         }
     }
