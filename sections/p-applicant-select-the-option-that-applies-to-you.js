@@ -29,7 +29,7 @@ const output = {
                 <p class="govuk-body">We will usually make a decision within 12 months. This is because we may need to examine your medical records, get medical reports and assess any losses.</p>
                 {{ govukDetails({
                 summaryText: "If you need help or support",
-                text: '
+                html: '
                     <p class="govuk-body">You can contact us for help with your application on 0300 003 3601. Select option 8.</p>
                     <p class="govuk-body">Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>
                     <p class="govuk-body">For practical or emotional support near you <a href="https://www.victimsinformationservice.org.uk/" target="_blank">visit the Victim and Witness Information</a> website.</p>
