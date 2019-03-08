@@ -1,3 +1,4 @@
+const today = new Date().toISOString();
 const output = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
@@ -7,6 +8,7 @@ const output = {
         "q--when-was-the-crime-reported-to-police": {
             "type": "string",
             "format": "date-time",
+            "formatMaximum": today,
             "title": "When was the crime reported to the police?",
             "errorMessages": {
                 "required": "Enter the date the crime was reported to the police",
