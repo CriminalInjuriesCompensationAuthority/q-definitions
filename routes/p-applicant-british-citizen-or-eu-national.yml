@@ -1,5 +1,5 @@
 p-applicant-british-citizen-or-eu-national:
 - goto: p-applicant-redirect-to-our-other-application
-  if: [==, q-applicant-british-citizen-or-eu-national, no]
+  if: [==, q-applicant-british-citizen-or-eu-national, false]
 - goto: p-applicant-are-you-18-or-over
-  if: [==, q-applicant-british-citizen-or-eu-national, yes]
+  if: [==, q-applicant-british-citizen-or-eu-national, true]
