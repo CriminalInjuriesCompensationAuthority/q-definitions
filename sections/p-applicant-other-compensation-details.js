@@ -1,22 +1,81 @@
 const output = {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Other compensation",
-    "type": "object",
-    "required": ["q-who-did-you-apply-for-compensation-to", "q-how-much-compensation-did-you-get"],
-    "additionalProperties": false,
-    "properties": {
-        "q-who-did-you-apply-for-compensation-to": {
-            "type": "string",
-            "title": "Who did you apply to?",
-            "errorMessages": {
-                "required": "Tell us who you applied to"
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    type: 'object',
+    title: 'Other compensation',
+    propertyNames: {
+        enum: [
+            'q-applicant-who-did-you-apply-to',
+            'q-applicant-has-a-decision-been-made',
+            'q-how-much-was-award',
+            'q-when-will-you-find-out'
+        ]
+    },
+    properties: {
+        'q-applicant-who-did-you-apply-to': {
+            type: 'string',
+            title: 'Who have you applied to or received compensation from?'
+        },
+        'q-applicant-has-a-decision-been-made': {
+            title: 'Have they made a decision?',
+            type: 'boolean'
+        },
+        'q-how-much-was-award': {
+            type: 'string',
+            title: 'How much was the award? '
+        },
+        'q-when-will-you-find-out': {
+            type: 'string',
+            title: 'When will you find out?',
+            description:
+                'Enter an approximate date, for example, December 2019. If you do not know you can say so.'
+        }
+    },
+    required: ['q-applicant-who-did-you-apply-to', 'q-applicant-has-a-decision-been-made'],
+    allOf: [
+        {
+            $ref: '#/definitions/if-false-then-q-when-will-you-find-out-is-required'
+        },
+        {
+            $ref: '#/definitions/if-true-then-q-how-much-was-award-is-required'
+        }
+    ],
+    definitions: {
+        'if-false-then-q-when-will-you-find-out-is-required': {
+            if: {
+                properties: {
+                    'q-applicant-has-a-decision-been-made': {
+                        const: false
+                    }
+                }
+            },
+            then: {
+                required: ['q-when-will-you-find-out'],
+                propertyNames: {
+                    enum: [
+                        'q-applicant-who-did-you-apply-to',
+                        'q-applicant-has-a-decision-been-made',
+                        'q-when-will-you-find-out'
+                    ]
+                }
             }
         },
-        "q-how-much-compensation-did-you-get": {
-            "type": "string",
-            "title": "How much compensation did you get, or expect to get?",
-            "errorMessages": {
-                "required": "Tell us how much compensation you got, or are expecting to get"
+        'if-true-then-q-how-much-was-award-is-required': {
+            if: {
+                properties: {
+                    'q-applicant-has-a-decision-been-made': {
+                        const: true
+                    }
+                }
+            },
+            then: {
+                required: ['q-how-much-was-award'],
+                propertyNames: {
+                    enum: [
+                        'q-applicant-who-did-you-apply-to',
+                        'q-applicant-has-a-decision-been-made',
+                        'q-how-much-was-award'
+                    ]
+                }
             }
         }
     }
