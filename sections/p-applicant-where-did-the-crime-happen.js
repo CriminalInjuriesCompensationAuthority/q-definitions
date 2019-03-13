@@ -26,7 +26,7 @@ const output = {
                 }
             ],
             "errorMessages": {
-                "required": "please select an option"
+                "required": "Select England, Scotland, Wales or Somewhere else"
             }
         }
     }

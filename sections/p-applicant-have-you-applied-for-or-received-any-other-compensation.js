@@ -12,11 +12,17 @@ const output = {
             title: 'Have you applied for or received any other form of compensation?',
             description:
                 'For example, if you claimed insurance, sought civil damages, or a court decided you should get compensation.',
-            type: 'boolean'
+            type: 'boolean',
+            errorMessages: {
+                required: "Select yes if you have applied for or received another form of compensation"
+            }
         },
         'q-applicant-applied-for-other-compensation-briefly-explain-why-not': {
             type: 'string',
-            title: 'Briefly explain why not.'
+            title: 'Briefly explain why not.',
+            errorMessages: {
+                required: "Select yes if you have applied for or received another form of compensation"
+            }
         }
     },
     required: ['q-applicant-have-you-applied-for-or-received-any-other-compensation'],

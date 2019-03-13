@@ -13,7 +13,10 @@ const output = {
     properties: {
         'q-applicant-who-did-you-apply-to': {
             type: 'string',
-            title: 'Who have you applied to or received compensation from?'
+            title: 'Who have you applied to or received compensation from?',
+            errorMessages: {
+                required: 'Enter the source of the other compensation, for example, the name of a person, company or court'
+            }
         },
         'q-applicant-has-a-decision-been-made': {
             title: 'Have they made a decision?',
@@ -21,7 +24,10 @@ const output = {
         },
         'q-how-much-was-award': {
             type: 'string',
-            title: 'How much was the award? '
+            title: 'How much was the award?',
+            errorMessages: {
+                required: 'Enter the amount of compensation you got'
+            }
         },
         'q-when-will-you-find-out': {
             type: 'string',

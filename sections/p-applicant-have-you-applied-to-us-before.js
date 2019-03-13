@@ -10,7 +10,10 @@ const output = {
     properties: {
         'q-applicant-have-you-applied-to-us-before': {
             title: 'Have you applied to us before?',
-            type: 'boolean'
+            type: 'boolean',
+            errorMessages: {
+                required: 'Select yes if you have applied to us before'
+            }
         },
         'q-enter-your-previous-reference-number': {
             type: 'string',
