@@ -8,4 +8,4 @@ Feature: Error message if date of birth conflicts with crime date
         And I enter my date of birth
         When I click continue
         And it falls after the date for q-applicant-when-did-the-crime-happen
-        Then I will see this error message
+        Then I will see this error message "Date of birth must be before the date the crime happened"

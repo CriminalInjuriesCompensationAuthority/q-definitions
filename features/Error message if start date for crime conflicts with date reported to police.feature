@@ -8,4 +8,4 @@ Feature: Error message if start date for crime conflicts with date reported to p
         And I enter the start date
         When I click continue
         And it falls after the date for q--when-was-the-crime-reported-to-police
-        Then I will see this error message
+        Then I will see this error message "The date the crime started must be before the date the crime was reported to the police"

@@ -8,4 +8,4 @@ Feature: Error message if date of crime conflicts with date reported to police
         And I enter the date of crime
         When I click continue
         And it falls after the date for q--when-was-the-crime-reported-to-police
-        Then I will see this error message
+        Then I will see this error message "The date the crime happened must be the same as or before the date it was reported to the police"

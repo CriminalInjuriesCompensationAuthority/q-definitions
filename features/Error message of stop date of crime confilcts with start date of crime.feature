@@ -8,4 +8,4 @@ Feature: Error message of stop date of crime confilcts with start date of crime
         And I enter the stop date
         When I click continue
         And it falls before the date for q-applicant-when-did-the-crime-start
-        Then I will see this error message
+        Then I will see this error message "The date the crime stopped must be on or before the date the crime was reported to the police"
