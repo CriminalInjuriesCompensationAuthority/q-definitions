@@ -22,11 +22,11 @@ const output = {
         },
         {
           "title": "North Wales",
-          "const": "northWales"
+          "const": "north-wales"
         },
         {
           "title": "South Wales",
-          "const": "southWales"
+          "const": "south-wales"
         }
       ],
       "errorMessages": {

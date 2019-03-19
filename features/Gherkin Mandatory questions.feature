@@ -2,7 +2,7 @@ Feature: Error messages on mandatory questions
     As a user I will see an error message
     If I attempt to continue without answering the mandatory question on the page
     So that CICA gets the informaton required to casework the application
-    
+
 
     Scenario Outline: User has not answered a mandatory question
         Given I am on <Page>
@@ -40,14 +40,14 @@ Feature: Error messages on mandatory questions
             | p-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police | q-applicant-explain-reason-for-delay-reporting                            | Explain the reasons for the delay in reporting the crime to the police                          |
             | p-offender-do-you-know-the-name-of-the-offender                           | q-offender-do-you-know-the-name-of-the-offender                           | Select yes if you know the offender's name                                                      |
             | p-offender-enter-offenders-name                                           | q-offender-enter-offenders-name                                           | Enter the offender's name                                                                       |
-            | p-applicant-have-you-applied-to-us-before                                 | q-applicant-have-you-applied-to-us-before                                 | Select yes if you have applied to us before                                                     |                                                                                  
-            | p-applicant-have-you-applied-for-or-received-any-other-compensation       | q-applicant-have-you-applied-for-or-received-any-other-compensation       | Select yes if you have applied for or received another form of compensation                     |                                                                                 |                                                                                  
+            | p-applicant-have-you-applied-to-us-before                                 | q-applicant-have-you-applied-to-us-before                                 | Select yes if you have applied to us before                                                     |
+            | p-applicant-have-you-applied-for-or-received-any-other-compensation       | q-applicant-have-you-applied-for-or-received-any-other-compensation       | Select yes if you have applied for or received another form of compensation                     |
             | p-applicant-have-you-applied-for-or-received-any-other-compensation       | q-applicant-applied-for-other-compensation-briefly-explain-why-not        | Explain why you did not apply for or receive any other form of compensation                     |
             | p-applicant-other-compensation-details                                    | q-applicant-who-did-you-apply-to                                          | Enter who you applied to or received compensation from                                          |
             | p-applicant-other-compensation-details                                    | q-applicant-has-a-decision-been-made                                      | Select yes if you have received a decision about the other compensation claim                   |
             | p-applicant-other-compensation-details                                    | q-how-much-was-award                                                      | Enter an amount                                                                                 |
             | p-applicant-other-compensation-details                                    | q-when-will-you-find-out                                                  | Enter an approximate date                                                                       |
-            | p-applicant-enter-your-name                                               | q-applicant-title                                                         | Enter your title                                                                                |     
+            | p-applicant-enter-your-name                                               | q-applicant-title                                                         | Enter your title                                                                                |
             | p-applicant-enter-your-name                                               | q-applicant-first-name                                                    | Enter your first name                                                                           |
             | p-applicant-enter-your-name                                               | q-applicant-last-name                                                     | Enter your last name                                                                            |
             | p-applicant-have-you-been-known-by-any-other-names                        | q-applicant-have-you-been-known-by-any-other-names                        | Select yes if you have been known by any other names                                            |

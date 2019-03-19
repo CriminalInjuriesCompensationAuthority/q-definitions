@@ -7,8 +7,8 @@ const output = {
         "q-applicant-enter-your-date-of-birth": {
             "type": "string",
             "format": "date-time",
-            "formatMaximum": {'$ref' : "#/answers/p--when-was-the-crime-reported-to-police/q-was-the-crime-reported-to-police/value'"},
             "title": "Enter your date of birth",
+            "description": "For example, 31 3 2018.",
             "errorMessages": {
                 "required": "Enter your date of birth"
             }

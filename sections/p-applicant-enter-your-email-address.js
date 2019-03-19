@@ -7,6 +7,7 @@ const output = {
         "q-applicant-email-address": {
             "type": "string",
             "title": "Enter your email address",
+            "description": "We'll use this to contact you about your application for example, to request more information.",
             "errorMessages": {
                 "required": "Enter your email address"
             }

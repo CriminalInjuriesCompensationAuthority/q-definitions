@@ -9,6 +9,7 @@ const output = {
         "q-whats-the-crime-reference-number": {
             "title": "What's the crime reference number?",
             "type": "string",
+            "description": "This is the reference number the police gave the crime when it was reported.",
             "errorMessages": {
                 "required": "Enter the crime reference number"
             }

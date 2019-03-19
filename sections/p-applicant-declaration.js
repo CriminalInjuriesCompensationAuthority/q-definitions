@@ -6,9 +6,9 @@ const output = {
     properties: {
         'applicant-declaration': {
             description: `
-                <p><strong>By continuing you confirm that the information you will give is true as far as you know.</strong></p>
+                <p class="govuk-body">By continuing you confirm that the information you will give is true as far as you know.</p>
                 {{ govukWarningText({
-                    text: "You could be prosecuted or get less compensation if you give false or misleading information.",
+                    text: "If you deliberately give false or misleading information, you may get less compensation or be prosecuted.",
                     iconFallbackText: "Warning"
                 }) }}
             `

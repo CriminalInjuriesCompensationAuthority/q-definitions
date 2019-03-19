@@ -1,4 +1,3 @@
-const today = new Date().toISOString();
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
@@ -8,8 +7,8 @@ const output = {
         'q-applicant-when-did-the-crime-stop': {
             type: 'string',
             format: 'date-time',
-            formatMaximum: today,
             title: 'When did it stop?',
+            description: 'For example, 31 3 2018. You can enter an approximate date.',
             errorMessages: {
                 required: 'Enter the date the crime started and include a month and year',
                 format: 'The date the crime stopped must be in the past'

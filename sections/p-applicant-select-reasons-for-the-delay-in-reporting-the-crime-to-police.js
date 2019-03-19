@@ -26,13 +26,16 @@ const output = {
                 ]
             },
             errorMessages: {
-                required: 'Select your choice'
+                required: 'Select if you were under 18, advised to wait, medical reasons or other reasons'
             }
         },
         'q-applicant-explain-delay-reasons': {
             title: 'Briefly explain these reasons',
             type: 'string',
-            maxLength: 500
+            maxLength: 500,
+            errorMessages: {
+                required: 'Explain the reasons for the delay in making your application'
+            }
         }
     }
 };

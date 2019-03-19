@@ -15,6 +15,7 @@ const output = {
     "q-applicant-welsh-location": {
       "type": "string",
       "title": "Location",
+        "description": "For example, the name of a street, business, building or nearby local landmark. You can enter more than one.",
       "errorMessages": {
         "required": "Enter the name of a street, business, building or nearby local landmark"
       }
