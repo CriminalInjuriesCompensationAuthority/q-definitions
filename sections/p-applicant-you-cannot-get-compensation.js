@@ -4,7 +4,7 @@ const output = {
     type: 'object',
     additionalProperties: false,
     properties: {
-        'applicant-declaration': {
+        'you-cannot-get-compensation': {
             description: `
                 <p class="govuk-body-l">If the crime has not been reported to the police we can not pay compensation.</p>
                 <p class="govuk-body">You may continue your application, but any future application for the same injuries will be refused.</p>

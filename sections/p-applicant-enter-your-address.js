@@ -18,17 +18,20 @@ const output = {
     "q-applicant-town-or-city": {
       "type": "string",
       "title": "Town or city",
+        "classes": "govuk-!-width-two-thirds",
       "errorMessages": {
         "required": "Enter the town or city where you live"
       }
     },
     "q-applicant-county": {
       "type": "string",
-      "title": "County"
+      "title": "County",
+        "classes": "govuk-!-width-two-thirds",
     },
     "q-applicant-postcode": {
       "type": "string",
-      "title": "Postcode"
+      "title": "Postcode",
+        "classes": "govuk-input--width-10",
     }
   }
 };

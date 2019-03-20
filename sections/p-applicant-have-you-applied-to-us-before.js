@@ -18,6 +18,7 @@ const output = {
         'q-enter-your-previous-reference-number': {
             type: 'string',
             title: 'Enter your previous reference number if you know it (optional)'
+            classes: "govuk-!-width-full",
         }
     },
     required: ['q-applicant-have-you-applied-to-us-before'],

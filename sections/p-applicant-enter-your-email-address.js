@@ -8,6 +8,7 @@ const output = {
             "type": "string",
             "title": "Enter your email address",
             "description": "We'll use this to contact you about your application for example, to request more information.",
+            "classes": "govuk-input--width-20",
             "errorMessages": {
                 "required": "Enter your email address"
             }

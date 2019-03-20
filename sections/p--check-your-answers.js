@@ -1,12 +1,12 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    title: 'Check your answers before sending your application',
+    title: 'Check your answers',
     type: 'object',
     additionalProperties: false,
     properties: {
         'applicant-impact-on-you': {
             description: `
-      <h2 class="govuk-heading-m">Your details</h2>
+      <h2 class="govuk-heading-l">Your details</h2>
         {{ govukSummaryList({
           classes: 'govuk-!-margin-bottom-9',
           rows: [
@@ -97,7 +97,7 @@ const output = {
             }
           ]
         })}}
-      <h2 class="govuk-heading-m">Your eligibility</h2>
+      <h2 class="govuk-heading-l">Your eligibility</h2>
         {{ govukSummaryList({
           classes: 'govuk-!-margin-bottom-9',
           rows: [
@@ -188,7 +188,7 @@ const output = {
             }
           ]
         }) }}
-      <h2 class="govuk-heading-m">About the crime</h2>
+      <h2 class="govuk-heading-l">About the crime</h2>
       {{ govukSummaryList({
         classes: 'govuk-!-margin-bottom-9',
         rows: [
@@ -319,7 +319,7 @@ const output = {
         ]
       }) }}
 
-      <h2 class="govuk-heading-m">Police report</h2>
+      <h2 class="govuk-heading-l">Police report</h2>
 
       {{ govukSummaryList({
         classes: 'govuk-!-margin-bottom-9',
@@ -395,7 +395,7 @@ const output = {
         ]
       }) }}
 
-      <h2 class="govuk-heading-m">Other compensation</h2>
+      <h2 class="govuk-heading-l">Other compensation</h2>
 
       {{ govukSummaryList({
         classes: 'govuk-!-margin-bottom-9',

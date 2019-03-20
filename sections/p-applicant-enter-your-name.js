@@ -8,6 +8,7 @@ const output = {
         "q-applicant-name-title": {
             "title": "Title",
             "type": "string",
+            "classes": "govuk-input--width-10",
             "errorMessages": {
                 "required": "Enter your title"
             }

@@ -10,6 +10,7 @@ const output = {
             "title": "What's the crime reference number?",
             "type": "string",
             "description": "This is the reference number the police gave the crime when it was reported.",
+            "classes": "govuk-input--width-20",
             "errorMessages": {
                 "required": "Enter the crime reference number"
             }

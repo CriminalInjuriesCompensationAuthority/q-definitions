@@ -8,7 +8,12 @@ const output = {
             type: 'string',
             format: 'date-time',
             title: 'When did it start?',
-            description: 'For example, 31 3 2018. You can enter an approximate date.',
+            description: 'For example, 03 2018. You can enter an approximate date.',
+            dateParts: {
+                day: false,
+                month: true,
+                year: true
+            },
             errorMessages: {
                 required: 'Enter the date the crime started and include a month and year',
                 format: 'The date the crime started must be in the past'
