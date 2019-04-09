@@ -10,8 +10,8 @@ const output = {
             title: 'When did it stop?',
             description: 'For example, 31 3 2018. You can enter an approximate date.',
             errorMessages: {
-                required: 'Enter the date the crime started and include a month and year',
-                format: 'The date the crime stopped must be in the past'
+                required: 'Enter the date the crime stopped and include a month and year',
+                format: 'Enter the date the crime stopped and include a month and year'
             }
         },
         'i-dont-know-when-the-crime-stopped': {

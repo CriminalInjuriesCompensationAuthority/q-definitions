@@ -8,7 +8,7 @@ const output = {
     "q-applicant-scottish-town-or-city": {
       "type": "string",
       "title": "Town or city",
-        "classes": "govuk-input--width-30",
+        "maxLength": 60,
       "errorMessages": {
         "required": "Enter the town or city where the crime happened"
       }
@@ -17,7 +17,7 @@ const output = {
       "type": "string",
       "title": "Location",
         "description": "For example, the name of a street, business, building or nearby local landmark. You can enter more than one.",
-        "classes": "govuk-input--width-30",
+        "maxLength": 60,
       "errorMessages": {
         "required": "Enter the name of a street, business, building or nearby local landmark"
       }

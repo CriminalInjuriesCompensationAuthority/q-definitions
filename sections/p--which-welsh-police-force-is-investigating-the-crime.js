@@ -30,7 +30,7 @@ const output = {
         }
       ],
       "errorMessages": {
-        "required": "Select a Police force"
+        "required": "Select a police force"
       }
     }
   }

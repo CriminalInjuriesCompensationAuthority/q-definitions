@@ -15,25 +15,31 @@ const output = {
             type: 'string',
             title: 'Who have you applied to or received compensation from?',
             errorMessages: {
-                required: 'Enter the source of the other compensation, for example, the name of a person, company or court'
+                required: 'Enter who you applied to or received compensation from'
             }
         },
         'q-applicant-has-a-decision-been-made': {
             title: 'Have they made a decision?',
-            type: 'boolean'
+            type: 'boolean',
+            errorMessages: {
+                required: "Select yes if you have received a decision about the other compensation claim"
+            }
         },
         'q-how-much-was-award': {
             type: 'string',
             title: 'How much was the award?',
             errorMessages: {
-                required: 'Enter the amount of compensation you got'
+                required: 'Enter an amount'
             }
         },
         'q-when-will-you-find-out': {
             type: 'string',
             title: 'When will you find out?',
             description:
-                'Enter an approximate date, for example, December 2019. If you do not know you can say so.'
+                'Enter an approximate date, for example, December 2019. If you do not know you can say so.',
+            errorMessages: {
+                required: 'Enter an approximate date'
+            }
         }
     },
     required: ['q-applicant-who-did-you-apply-to', 'q-applicant-has-a-decision-been-made'],

@@ -9,14 +9,9 @@ const output = {
             format: 'date-time',
             title: 'When did it start?',
             description: 'For example, 03 2018. You can enter an approximate date.',
-            dateParts: {
-                day: false,
-                month: true,
-                year: true
-            },
             errorMessages: {
                 required: 'Enter the date the crime started and include a month and year',
-                format: 'The date the crime started must be in the past'
+                format: 'Enter the date the crime started and include a month and year'
             }
         },
         'i-dont-know-when-the-crime-started': {

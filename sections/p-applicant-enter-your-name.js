@@ -8,7 +8,28 @@ const output = {
         "q-applicant-name-title": {
             "title": "Title",
             "type": "string",
-            "classes": "govuk-input--width-10",
+            "oneOf": [
+                {
+                    "title": "Mr",
+                    "const": "mr"
+                },
+                {
+                    "title": "Mrs",
+                    "const": "mrs"
+                },
+                {
+                    "title": "Miss",
+                    "const": "miss"
+                },
+                {
+                    "title": "Ms",
+                    "const": "ms"
+                },
+                {
+                    "title": "Dr",
+                    "const": "dr"
+                },
+            ],
             "errorMessages": {
                 "required": "Enter your title"
             }

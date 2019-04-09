@@ -20,9 +20,9 @@ const output = {
         'q-applicant-applied-for-other-compensation-briefly-explain-why-not': {
             type: 'string',
             title: 'Briefly explain why not.',
-            classes: "govuk-!-width-two-thirds",
+            maxLength : 500,
             errorMessages: {
-                required: "Select yes if you have applied for or received another form of compensation"
+                required: "Explain why you did not apply for or receive any other form of compensation"
             }
         }
     },

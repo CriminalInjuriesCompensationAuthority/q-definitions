@@ -1,3 +1,4 @@
+@MVP
 Feature: Error messages on mandatory questions
     As a user I will see an error message
     If I attempt to continue without answering the mandatory question on the page
@@ -6,10 +7,8 @@ Feature: Error messages on mandatory questions
 
     Scenario Outline: User has not answered a mandatory question
         Given I am on <Page>
-        When I click continue
-        And I have not answered the <Question>
+        When I have not answered the <Question> and I click continue
         Then I will see an <Error>
-
         Examples:
             | Page                                                                      | Question                                                                  | Error                                                                                           |
             | p-applicant-british-citizen-or-eu-national                                | q-applicant-british-citizen-or-eu-national                                | Select yes if you are a British citizen or EU national                                          |
@@ -58,3 +57,4 @@ Feature: Error messages on mandatory questions
             | p-applicant-enter-your-address                                            | q-applicant-building-and-street-2                                         | Enter the building and street where you live                                                    |
             | p-applicant-enter-your-address                                            | q-applicant-town-or-city                                                  | Enter the town or city where you live                                                           |
             | p-applicant-enter-your-telephone-number                                   | q-applicant-enter-your-telephone-number                                   | Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192                |
+

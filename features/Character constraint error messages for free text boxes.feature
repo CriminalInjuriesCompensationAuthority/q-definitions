@@ -1,3 +1,4 @@
+@post-mvp
 Feature: Character constraint error message for free text boxes
     As a user I will see an error message
     If I enter more than the maximum character count on a free text box
@@ -19,7 +20,7 @@ Feature: Character constraint error message for free text boxes
         | q-offender-enter-offenders-name                                           | 120     | Offender's name must be 120 characters or less                                      |
         | q-offender-describe-contact-with-offender                                 | 500     | Description must be 500 characters or less                                          |
         | q-enter-your-previous-reference-number                                    | 50      | Previous reference number must be 50 characters or less                             |
-        | q-applicant-who-did-you-apply-to                                          | 50      | Who you applied to or received compensation from must be 50 characters or less      |      
+        | q-applicant-who-did-you-apply-to                                          | 50      | Who you applied to or received compensation from must be 50 characters or less      |
         | q-applicant-applied-for-other-compensation-briefly-explain-why-not        | 500     | Explanation must be 500 characters or less                                          |
         | q-applicant-title                                                         | 6       | Title must be 6 characters or less                                                  |
         | q-applicant-first-name                                                    | 70      | First name must be 70 characters or less                                            |
@@ -37,21 +38,21 @@ Feature: Character constraint error message for free text boxes
         | q--whats-the-crime-reference-number                                       | 30      | Crime reference number must be 30 characters or less                                |
         | q-how-much-was-award                                                      | 50      | Award amount must be 50 characters or less                                          |
         | q-when-will-you-find-out                                                  | 50      | When will you find out? must be 50 characters or less                               |
-        
-        
-        
-        
-        
-        
-        
-        
-         
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

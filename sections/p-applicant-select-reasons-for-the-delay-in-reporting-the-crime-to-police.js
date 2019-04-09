@@ -26,7 +26,7 @@ const output = {
                 ]
             },
             errorMessages: {
-                required: 'Select if you were under 18, advised to wait, medical reasons or other reasons'
+                required: 'Select if you were under 18, unable to report the crime or other reasons'
             }
         },
         'q-applicant-explain-delay-reasons': {
@@ -34,7 +34,7 @@ const output = {
             type: 'string',
             maxLength: 500,
             errorMessages: {
-                required: 'Explain the reasons for the delay in making your application'
+                required: 'Explain the reasons for the delay in reporting the crime to the police'
             }
         }
     }

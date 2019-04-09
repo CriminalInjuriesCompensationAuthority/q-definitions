@@ -1,3 +1,4 @@
+@MVP
 Feature: Error messages on mandatory offender question
     As a user I will see an error message
     If I attempt to continue without answering the mandatory question on the page
@@ -5,7 +6,5 @@ Feature: Error messages on mandatory offender question
 
 Scenario: User has not answered a mandatory question
         Given I am on p-offender-describe-contact-with-offender
-        When I click continue
-        And I have not answered q-offender-describe-contact-with-offender
-        Or I have not answered q-offender-i-have-no-contact-with-offender
-        Then I will see this error message "Enter details of any contact you have with the offender"
+        When I have not answered the q-offender-describe-contact-with-offender Or I have not answered the q-offender-i-have-no-contact-with-offender and I click continue
+        Then I will see an Enter details of any contact you have with the offender

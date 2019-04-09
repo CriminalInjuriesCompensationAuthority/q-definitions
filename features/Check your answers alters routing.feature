@@ -1,8 +1,9 @@
+@MVP-not-finished
 Feature: The check your answers page must allow the user to make an edit and if this opens a new question, follow the new routing until the application is ready to be submitted
     As a user I want to be able to change an answer before submitting my application
-    so that I am providing accurate information to CICA 
+    so that I am providing accurate information to CICA
 
-Scenario Outline: User wants to make a change on p--check-your-answers that opens new questions
+    Scenario Outline: User wants to make a change on p--check-your-answers that opens new questions
         Given I am on p--check-your-answers
         When I click change for an <Answer>
         Then I will return to <Page>
@@ -10,8 +11,8 @@ Scenario Outline: User wants to make a change on p--check-your-answers that open
         Then I should see <Next Page>
         And continue through the application following the regular routing
 
-        Example:
-            | Answer                                                    | Page                                                      | Question                                                  | Example                                              | Next Page
+        Examples:
+            | Answer                                                    | Page                                                      | Question                                                  | Example                                              | Next Page                                                                 |
             | Are you a British citizen or EU national?                 | p-applicant-british-citizen-or-eu-national                | q-applicant-british-citizen-or-eu-national                | No                                                   | p-applicant-redirect-to-our-other-application                             |
             | Are you 18 or over?                                       | p-applicant-are-you-18-or-over                            | q-applicant-are-you-18-or-over                            | No                                                   | p-applicant-redirect-to-our-other-application                             |
             | Who are you applying for?                                 | p-applicant-who-are-you-applying-for                      | q-applicant-who-are-you-applying-for                      | Someone else                                         | p-applicant-redirect-to-our-other-application                             |

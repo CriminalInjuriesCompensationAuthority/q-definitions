@@ -52,7 +52,7 @@ const output = {
                 }
             ],
             errorMessages: {
-                required: 'Select your choice'
+                required: 'Select either Option 1 or Option 2'
             }
         }
     }
