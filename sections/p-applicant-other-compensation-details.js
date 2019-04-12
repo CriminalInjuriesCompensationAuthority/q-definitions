@@ -22,7 +22,8 @@ const output = {
             title: 'Have they made a decision?',
             type: 'boolean',
             errorMessages: {
-                required: "Select yes if you have received a decision about the other compensation claim"
+                required:
+                    'Select yes if you have received a decision about the other compensation claim'
             }
         },
         'q-how-much-was-award': {

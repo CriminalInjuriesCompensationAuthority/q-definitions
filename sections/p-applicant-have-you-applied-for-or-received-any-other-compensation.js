@@ -14,15 +14,17 @@ const output = {
                 'For example, if you claimed insurance, sought civil damages, or a court decided you should get compensation.',
             type: 'boolean',
             errorMessages: {
-                required: "Select yes if you have applied for or received another form of compensation"
+                required:
+                    'Select yes if you have applied for or received another form of compensation'
             }
         },
         'q-applicant-applied-for-other-compensation-briefly-explain-why-not': {
             type: 'string',
             title: 'Briefly explain why not.',
-            maxLength : 500,
+            maxLength: 500,
             errorMessages: {
-                required: "Explain why you did not apply for or receive any other form of compensation"
+                required:
+                    'Explain why you did not apply for or receive any other form of compensation'
             }
         }
     },

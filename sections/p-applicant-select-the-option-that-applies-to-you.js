@@ -44,11 +44,11 @@ const output = {
             oneOf: [
                 {
                     title: 'Option 1: Sexual assault or abuse',
-                    const: 'opt1'
+                    const: 'option-1-sexual-assault-or-abuse'
                 },
                 {
                     title: 'Option 2: Sexual assault or abuse and other injuries or losses',
-                    const: 'opt2'
+                    const: 'option-2-sexual-assault-or-abuse-and-other-injuries-ro-losses'
                 }
             ],
             errorMessages: {

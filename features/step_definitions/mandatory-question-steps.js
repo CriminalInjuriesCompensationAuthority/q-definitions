@@ -1,22 +1,22 @@
 module.exports = function() {
     /* GIVEN */
 
-    this.Given(/^I am on (.*)$/, function(section) {
+    this.Given(/^I am on (.*)$/, section =>
         // Load the selected page
-        return helpers.loadPage(page.mandatoryQuestions.getUrl(section));
-    });
+        helpers.loadPage(page.mandatoryQuestions.getUrl(section))
+    );
 
     /* WHEN */
 
-    this.When(/^I have not answered the (.*) and I click continue$/, function(question) {
+    this.When(/^I have not answered the (.*) and I click continue$/, question =>
         // Click the continue button
-        return page.mandatoryQuestions.answerQuestion();
-    });
+        page.mandatoryQuestions.answerQuestion()
+    );
 
     /* THEN */
 
-    this.Then(/^I will see an (.*)$/, function(error) {
+    this.Then(/^I will see an (.*)$/, error =>
         // Search for the error
-        return driver.wait(until.elementsLocated(by.partialLinkText(error)), 10000);
-    });
+        driver.wait(until.elementsLocated(by.partialLinkText(error)), 10000)
+    );
 };

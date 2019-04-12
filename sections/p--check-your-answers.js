@@ -43,7 +43,7 @@ const output = {
                           }
                         ]
                       }
-                    }
+                    },
                     {
                       key: {
                         text: "Date of birth"
@@ -309,23 +309,6 @@ const output = {
                             href: answers.p__when_was_the_crime_reported_to_police.href,
                           text: "Change",
                           visuallyHiddenText: "when was the crime reported to police"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    key: {
-                      text: "What police force is dealing with the crime?"
-                    },
-                    value: {
-                        text: answers.whatForce.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.whatForce.href,
-                          text: "Change",
-                          visuallyHiddenText: "what police force is dealing with the crime"
                         }
                       ]
                     }
