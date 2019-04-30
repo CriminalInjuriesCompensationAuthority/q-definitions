@@ -6,28 +6,28 @@ module.exports = function() {
         helpers.loadPage(shared.cicaHelper.getUrl(section))
     );
 
-    this.Given(/^I answer all the questions on (.*)$/, section => {
+    this.Given(/^I answer all the questions on (.*)$/, section =>
         // Load the selected page and answer all the questions
-        return helpers.loadPage(shared.cicaHelper.getUrl(section)).then(function() {
-            return shared.cicaHelper.AnswerAllQuestions(section);
-        });
-    });
+        helpers
+            .loadPage(shared.cicaHelper.getUrl(section))
+            .then(() => shared.cicaHelper.AnswerAllQuestions(section))
+    );
 
-    this.Given(/^(.*) is visible$/, section => {
+    this.Given(/^(.*) is visible$/, section =>
         // Load the selected page and answer all the questions
-        return helpers.loadPage(shared.cicaHelper.getUrl(section)).then(function() {
-            return shared.cicaHelper.AnswerAllQuestions(section);
-        });
-    });
+        helpers
+            .loadPage(shared.cicaHelper.getUrl(section))
+            .then(() => shared.cicaHelper.AnswerAllQuestions(section))
+    );
 
     /* WHEN */
 
-    this.When(/^I click continue$/, function() {
+    this.When(/^I click continue$/, () => {
         // Click the continue button
         shared.cicaHelper.answerQuestion();
     });
 
-    this.When(/^I have not answered the (.*) and I click continue$/, function(question) {
+    this.When(/^I have not answered the (.*) and I click continue$/, question => {
         // Click the continue button
         shared.cicaHelper.answerQuestion();
     });

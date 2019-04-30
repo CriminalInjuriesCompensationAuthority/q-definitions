@@ -19,43 +19,23 @@ module.exports = {
     enterCharacters(question, input) {
         return driver
             .wait(until.elementsLocated(by.name(question)), 10000)
-            .then(function() {
-                return driver.findElement(by.name(question));
-            })
-            .then(function(element) {
+            .then(() => driver.findElement(by.name(question)))
+            .then(element => {
                 element.sendKeys(input);
             });
     },
 
     AnswerAllQuestions() {
         return driver.findElements(by.css('input')).then(elements => {
-            elements.forEach(element => {
-                return element.getAttribute('type').then(type => {
+            elements.forEach(element =>
+                element.getAttribute('type').then(type => {
                     if (type === 'text') {
                         element.sendKeys('test');
                     } else {
                         element.click();
                     }
-                });
-            });
-        });
-    },
-
-    huntAnswers(question, input) {
-        return driver.findElements(by.css('input')).then(elements => {
-            elements.forEach(element => {
-                element.click();
-                return driver.findElement(webdriver.By.name(question)).then(
-                    function(found) {
-                        found.sendKeys(input);
-                    },
-                    function(err) {
-                        if (err.state && err.state === 'no such element') {
-                            console.log('Element not found');
-                        }
-                    }
-                );
-            });
+                })
+            );
         });
     }
 };

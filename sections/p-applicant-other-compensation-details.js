@@ -17,7 +17,8 @@ const output = {
             maxLength: 50,
             errorMessages: {
                 required: 'Enter who you applied to or received compensation from',
-                maxLength: 'Who you applied to or received compensation from must be 50 characters or less'
+                maxLength:
+                    'Who you applied to or received compensation from must be 50 characters or less'
             }
         },
         'q-applicant-has-a-decision-been-made': {
