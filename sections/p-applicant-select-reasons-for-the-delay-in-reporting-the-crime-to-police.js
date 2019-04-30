@@ -1,7 +1,10 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
-    required: ['q-applicant-reason-for-delay-in-reporting-crime'],
+    required: [
+        'q-applicant-reason-for-delay-in-reporting-crime',
+        'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police'
+    ],
     additionalProperties: false,
     properties: {
         'q-applicant-reason-for-delay-in-reporting-crime': {
@@ -13,11 +16,11 @@ const output = {
                 anyOf: [
                     {
                         title: 'I was under 18',
-                        const: 'underage'
+                        const: 'i-was-under-18'
                     },
                     {
                         title: 'Unable to report the crime',
-                        const: 'unable'
+                        const: 'unable-to-report-crime'
                     },
                     {
                         title: 'Other reasons',
@@ -29,12 +32,13 @@ const output = {
                 required: 'Select if you were under 18, unable to report the crime or other reasons'
             }
         },
-        'q-applicant-explain-delay-reasons': {
+        'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police': {
             title: 'Briefly explain these reasons',
             type: 'string',
             maxLength: 500,
             errorMessages: {
-                required: 'Explain the reasons for the delay in reporting the crime to the police'
+                required: 'Explain the reasons for the delay in reporting the crime to the police',
+                maxLength: 'Explanation must be 500 characters or less'
             }
         }
     }

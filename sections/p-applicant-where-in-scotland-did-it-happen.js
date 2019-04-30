@@ -10,7 +10,8 @@ const output = {
             title: 'Town or city',
             maxLength: 60,
             errorMessages: {
-                required: 'Enter the town or city where the crime happened'
+                required: 'Enter the town or city where the crime happened',
+                maxLength: 'Town or city must be 60 characters or less'
             }
         },
         'q-applicant-scottish-location': {
@@ -20,7 +21,8 @@ const output = {
                 'For example, the name of a street, business, building or nearby local landmark. You can enter more than one.',
             maxLength: 60,
             errorMessages: {
-                required: 'Enter the name of a street, business, building or nearby local landmark'
+                required: 'Enter the name of a street, business, building or nearby local landmark',
+                maxLength: 'Location must be 60 characters or less'
             }
         }
     }

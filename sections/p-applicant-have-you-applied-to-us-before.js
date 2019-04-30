@@ -18,7 +18,10 @@ const output = {
         'q-enter-your-previous-reference-number': {
             type: 'string',
             title: 'Enter your previous reference number if you know it (optional)',
-            maxLength: 50
+            maxLength: 50,
+            errorMessages: {
+                MaxLength: 'Previous reference number must be 50 characters or less'
+            }
         }
     },
     required: ['q-applicant-have-you-applied-to-us-before'],

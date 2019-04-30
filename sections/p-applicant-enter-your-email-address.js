@@ -11,7 +11,8 @@ const output = {
                 "We'll use this to contact you about your application for example, to request more information.",
             maxLength: 50,
             errorMessages: {
-                required: 'Enter your email address'
+                required: 'Enter your email address',
+                maxLength: 'Email address must be 50 characters or less'
             }
         }
     }

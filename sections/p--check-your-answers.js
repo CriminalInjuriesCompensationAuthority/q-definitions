@@ -1,387 +1,47 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    title: 'Check your answers',
     type: 'object',
     additionalProperties: false,
     properties: {
-        'check-your-answers': {
-            description: `
-              <h2 class="govuk-heading-l">Your details</h2>
-                {{ govukSummaryList({
-                  classes: 'govuk-!-margin-bottom-9',
-                  rows: [
-                    {
-                      key: {
-                        text: "Name"
-                      },
-                      value: {
-                        text: answers.p_applicant_enter_your_name.value 
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_enter_your_name.href,
-                            text: "Change",
-                            visuallyHiddenText: "name"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Have you ever been known by any other names?"
-                      },
-                      value: {
-                        text: answers.p_applicant_have_you_been_known_by_any_other_names.value 
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_have_you_been_known_by_any_other_names.href,
-                            text: "Change",
-                            visuallyHiddenText: "other names"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Date of birth"
-                      },
-                      value: {
-                        text: answers.p_applicant_enter_your_date_of_birth.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_enter_your_date_of_birth.href,
-                            text: "Change",
-                            visuallyHiddenText: "date of birth"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Email address"
-                      },
-                      value: {
-                        text: answers.p_applicant_enter_your_email_address.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_enter_your_email_address.href,
-                            text: "Change",
-                            visuallyHiddenText: "email address"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Address"
-                      },
-                      value: {
-                        html: answers.p_applicant_enter_your_address.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_enter_your_address.href,
-                            text: "Change",
-                            visuallyHiddenText: "address"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Telephone Number"
-                      },
-                      value: {
-                        text: answers.p_applicant_enter_your_telephone_number.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_enter_your_telephone_number.href,
-                            text: "Change",
-                            visuallyHiddenText: "telephone number"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Are you a British citizen or EU national?"
-                      },
-                      value: {
-                        text: answers.p_applicant_british_citizen_or_eu_national.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_british_citizen_or_eu_national.href,
-                            text: "Change",
-                            visuallyHiddenText: "are you a British citizen or EU national"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Are you 18 or over?"
-                      },
-                      value: {
-                        text: answers.p_applicant_are_you_18_or_over.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_are_you_18_or_over.href,
-                            text: "Change",
-                            visuallyHiddenText: "are you 18 or over"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Who are you applying for?"
-                      },
-                      value: {
-                        text: answers.p_applicant_who_are_you_applying_for.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_who_are_you_applying_for.href,
-                            text: "Change",
-                            visuallyHiddenText: "who are you applying for"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Were you a victim of sexual assault or abuse?"
-                      },
-                      value: {
-                        text: answers.p_applicant_were_you_a_victim_of_sexual_assault_or_abuse.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_were_you_a_victim_of_sexual_assault_or_abuse.href,
-                            text: "Change",
-                            visuallyHiddenText: "were you a victim of sexual assault or abuse"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      key: {
-                        text: "Option you've selected"
-                      },
-                      value: {
-                        text: answers.p_applicant_select_the_option_that_applies_to_you.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_select_the_option_that_applies_to_you.href,
-                            text: "Change",
-                            visuallyHiddenText: "select the option that applies to you"
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }) }}
-              <h2 class="govuk-heading-l">About the crime</h2>
-              {{ govukSummaryList({
-                classes: 'govuk-!-margin-bottom-9',
-                rows: [
-                  {
-                    key: {
-                      text: "Did the crime happen once or over a period of time?"
-                    },
-                    value: {
-                        text: answers.p_applicant_did_the_crime_happen_once_or_over_time.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_did_the_crime_happen_once_or_over_time.href,
-                          text: "Change",
-                          visuallyHiddenText: "did the crime happen once or over a period of time"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    key: {
-                      text: "Where did the crime happen?"
-                    },
-                    value: {
-                        text: answers.p_applicant_where_did_the_crime_happen.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_where_did_the_crime_happen.href,
-                          text: "Change",
-                          visuallyHiddenText: "where did the crime happen"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    key: {
-                      text: "Do you know the name of the offender?"
-                    },
-                    value: {
-                        text: answers.p_offender_do_you_know_the_name_of_the_offender.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_offender_do_you_know_the_name_of_the_offender.href,
-                          text: "Change",
-                          visuallyHiddenText: "do you know the name of the offender"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    key: {
-                      text: "Contact with the offender"
-                    },
-                    value: {
-                        text: answers.p_offender_describe_contact_with_offender.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_offender_describe_contact_with_offender.href,
-                          text: "Change",
-                          visuallyHiddenText: "Contact with the offender"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }) }}
-        
-              <h2 class="govuk-heading-l">Police report</h2>
-        
-              {{ govukSummaryList({
-                classes: 'govuk-!-margin-bottom-9',
-                rows: [
-                  {
-                    key: {
-                      text: "Was the crime reported to the police?"
-                    },
-                    value: {
-                        text: answers.p__was_the_crime_reported_to_police.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p__was_the_crime_reported_to_police.href,
-                          text: "Change",
-                          visuallyHiddenText: "was the crime reported to the police"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    key: {
-                      text: "When was the crime reported to police?"
-                    },
-                    value: {
-                        text: answers.p__when_was_the_crime_reported_to_police.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p__when_was_the_crime_reported_to_police.href,
-                          text: "Change",
-                          visuallyHiddenText: "when was the crime reported to police"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    key: {
-                      text: "Crime reference number?"
-                    },
-                    value: {
-                        text: answers.p__whats_the_crime_reference_number.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p__whats_the_crime_reference_number.href,
-                          text: "Change",
-                          visuallyHiddenText: "crime reference number"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }) }}
-        
-              <h2 class="govuk-heading-l">Other compensation</h2>
-        
-              {{ govukSummaryList({
-                classes: 'govuk-!-margin-bottom-9',
-                rows: [
-                  {
-                    key: {
-                      text: "Have you applied to us before?"
-                    },
-                    value: {
-                        text: answers.p_applicant_have_you_applied_to_us_before.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_have_you_applied_to_us_before.href,
-                          text: "Change",
-                          visuallyHiddenText: "have you applied to us before"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    key: {
-                      text: "Have you applied for or received any other form of compensation?"
-                    },
-                    value: {
-                        text: answers.p_applicant_have_you_applied_for_or_received_any_other_compensation.value
-                      },
-                      actions: {
-                        items: [
-                          {
-                            href: answers.p_applicant_have_you_applied_for_or_received_any_other_compensation.href,
-                          text: "Change",
-                          visuallyHiddenText: "have you applied for or received any other form of compensation"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }) }}
-        
-              <h2 class="govuk-heading-l">Agree and submit your application</h2>
-              <p class="govuk-body">By submitting this application you agree that we can share the details in it with the police. This helps us get the police information that we need to make a decision.</p>
-              <p class="govuk-body">To find out more about how we handle your data <a class="govuk-body" href="https://www.gov.uk/guidance/cica-privacy-notice" target="">read our privacy notice</a>.</p>
-                    `
+        'p-check-your-answers': {
+            summaryInfo: {
+                'p-applicant-enter-your-name': {displayName: 'Name'},
+                'p-applicant-have-you-been-known-by-any-other-names': {displayName: 'Have you been known by other names?'},
+                'p-applicant-what-other-names-have-you-used': {displayName: 'Other names'},
+                'p-applicant-enter-your-date-of-birth': {displayName: 'Date of birth'},
+                'p-applicant-enter-your-email-address': {displayName: 'Email'},
+                'p-applicant-enter-your-address': {displayName: 'Address'},
+                'p-applicant-enter-your-telephone-number': {displayName: 'Phone Number'},
+                'p-applicant-british-citizen-or-eu-national': {displayName: 'Are you a British citizen or EU National?'},
+                'p-applicant-are-you-18-or-over': {displayName: 'Are you 18 or over?'},
+                'p-applicant-who-are-you-applying-for': {displayName: 'Who are you applying for?'},
+                'p-applicant-were-you-a-victim-of-sexual-assault-or-abuse': {displayName: 'Were you a victim of sexual assault or abuse?'},
+                'p-applicant-select-the-option-that-applies-to-you': {displayName: 'Select the option that applies'},
+                'p-applicant-did-the-crime-happen-once-or-over-time': {displayName: 'Did the crime happen once or over a period of time?'},
+                'p-applicant-when-did-the-crime-happen': {displayName: 'When did the crime happen?'},
+                'p-applicant-when-did-the-crime-start': {displayName: 'When did the crime start?'},
+                'p-applicant-when-did-the-crime-stop': {displayName: 'When did the crime stop?'},
+                'p-applicant-select-reasons-for-the-delay-in-making-your-application': {displayName: 'Reasons for the delay in making your application'},
+                'p-applicant-where-did-the-crime-happen': {displayName: 'Where did the crime happen?'},
+                'p-applicant-where-in-england-did-it-happen': {displayName: 'Where in England did it happen?'},
+                'p-applicant-where-in-scotland-did-it-happen': {displayName: 'Where in Scotland did it happen?'},
+                'p-applicant-where-in-wales-did-it-happen': {displayName: 'Where in Wales did it happen?'},
+                'p-offender-do-you-know-the-name-of-the-offender': {displayName: 'Do you know the name of the offender?'},
+                'p-offender-enter-offenders-name': {displayName: 'Offenders name'},
+                'p-offender-describe-contact-with-offender': {displayName: 'Describe your contact with the offender'},
+                'p--was-the-crime-reported-to-police': {displayName: 'Was the crime reported to police?'},
+                'p--which-english-police-force-is-investigating-the-crime': {displayName: 'Which police force is investigating?'},
+                'p--which-police-scotland-division-is-investigating-the-crime': {displayName: 'Which police force is investigating?'},
+                'p--which-welsh-police-force-is-investigating-the-crime': {displayName: 'Which police force is investigating?'},
+                'p--when-was-the-crime-reported-to-police': {displayName: 'When was the crime reported?'},
+                'p-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police': {displayName: 'Reasons for delay in reporting crime'},
+                'p--whats-the-crime-reference-number': {displayName: 'Crime reference number'},
+                'p-applicant-have-you-applied-to-us-before': {displayName: 'Have you applied before?'},
+                'p-applicant-have-you-applied-for-or-received-any-other-compensation': {displayName: 'Have you received other compensation?'},
+                'p-applicant-other-compensation-details': {displayName: 'Details of other compensation received'}
+            }
         }
-    },
-    context: 'summary'
+    }
 };
 
 module.exports = output;

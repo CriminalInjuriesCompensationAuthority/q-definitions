@@ -60,6 +60,6 @@
         "jest": "^24.7.1",
         "lint-staged": "^8.0.4",
         "prettier": "^1.14.3",
-        "selenium-cucumber-js": "file:../selenium-cucumber-webdriver/selenium-cucumber-js"
+        "selenium-cucumber-js": "file:../selenium-cucumber-webdriver/"
     }
 }

@@ -23,8 +23,8 @@ const output = {
             title: 'Briefly explain why not.',
             maxLength: 500,
             errorMessages: {
-                required:
-                    'Explain why you did not apply for or receive any other form of compensation'
+                required: 'Explain why you did not apply for or receive any other form of compensation',
+                maxLength: 'Explanation must be 500 characters or less'
             }
         }
     },

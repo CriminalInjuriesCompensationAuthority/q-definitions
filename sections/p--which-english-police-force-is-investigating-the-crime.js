@@ -6,291 +6,291 @@ const output = {
     additionalProperties: false,
     properties: {
         'q--which-english-police-force-is-investigating-the-crime': {
-            type: 'string',
+            type: 'integer',
             oneOf: [
                 {
                     title: 'Avon And Somerset Constabulary',
-                    const: 'avon-and-somerset-constabulary'
+                    const: 10000033
                 },
                 {
                     title: 'Bedfordshire Police',
-                    const: 'bedfordshire-police'
+                    const: 10000035
                 },
                 {
                     title: 'British Transport Police',
-                    const: 'british-transport-police'
+                    const: 10000001
                 },
                 {
                     title: 'Cambridgeshire Constabulary',
-                    const: 'cambridgeshire-constabulary'
+                    const: 10000039
                 },
                 {
                     title: 'Cheshire Constabulary',
-                    const: 'cheshire-constabulary'
+                    const: 10000049
                 },
                 {
                     title: 'City Of London Police',
-                    const: 'city-of-london-police'
+                    const: 10000059
                 },
                 {
                     title: 'Cleveland Police',
-                    const: 'cleveland-police'
+                    const: 10000066
                 },
                 {
                     title: 'Cumbria Constabulary',
-                    const: 'cumbria-constabulary'
+                    const: 10000082
                 },
                 {
                     title: 'Derbyshire Constabulary',
-                    const: 'derbyshire-constabulary'
+                    const: 10000084
                 },
                 {
                     title: 'Devon and Cornwall Police',
-                    const: 'devon-and-cornwall-police'
+                    const: 10000090
                 },
                 {
                     title: 'Dorset Police',
-                    const: 'dorset-police'
+                    const: 10000093
                 },
                 {
                     title: 'Durham Constabulary',
-                    const: 'durham-constabulary'
+                    const: 10000102
                 },
                 {
                     title: 'Essex Police',
-                    const: 'essex-police'
+                    const: 10000114
                 },
                 {
                     title: 'Gloucestershire Constabulary',
-                    const: 'gloucestershire-constabulary'
+                    const: 10000128
                 },
                 {
                     title: 'Greater Manchester Police',
-                    const: 'greater-manchester-police'
+                    const: 10000140
                 },
                 {
                     title: 'Hampshire Constabulary',
-                    const: 'hampshire-constabulary'
+                    const: 10000150
                 },
                 {
                     title: 'Hertfordshire Constabulary',
-                    const: 'hertfordshire-constabulary'
+                    const: 10000153
                 },
                 {
                     title: 'Humberside Police',
-                    const: 'humberside-police'
+                    const: 10000169
                 },
                 {
                     title: 'Kent Police',
-                    const: 'kent-police'
+                    const: 10000172
                 },
                 {
                     title: 'Lancashire Constabulary',
-                    const: 'lancashire-constabulary'
+                    const: 10000175
                 },
                 {
                     title: 'Leicestershire Police',
-                    const: 'leicestershire-police'
+                    const: 10000176
                 },
                 {
                     title: 'Lincolnshire Police',
-                    const: 'lincolnshire-police'
+                    const: 10000179
                 },
                 {
                     title: 'Merseyside Police',
-                    const: 'merseyside-police'
+                    const: 10000181
                 },
                 {
                     title: 'Metropolitan Barking',
-                    const: 'metropolitan-barking'
+                    const: 11809785
                 },
                 {
                     title: 'Metropolitan Barnet',
-                    const: 'metropolitan-barnet'
+                    const: 11809719
                 },
                 {
                     title: 'Metropolitan Bexley',
-                    const: 'metropolitan-bexley'
+                    const: 11809788
                 },
                 {
                     title: 'Metropolitan Brent',
-                    const: 'metropolitan-brent'
+                    const: 11809722
                 },
                 {
                     title: 'Metropolitan Bromley',
-                    const: 'metropolitan-bromley'
+                    const: 11809760
                 },
                 {
                     title: 'Metropolitan Camden',
-                    const: 'metropolitan-camden'
+                    const: 11809694
                 },
                 {
                     title: 'Metropolitan Croydon',
-                    const: 'metropolitan-croydon'
+                    const: 11809713
                 },
                 {
                     title: 'Metropolitan Ealing',
-                    const: 'metropolitan-ealing'
+                    const: 11809743
                 },
                 {
                     title: 'Metropolitan Enfield',
-                    const: 'metropolitan-enfield'
+                    const: 11809783
                 },
                 {
                     title: 'Metropolitan Greenwich',
-                    const: 'metropolitan-greenwich'
+                    const: 11809709
                 },
                 {
                     title: 'Metropolitan Hackney',
-                    const: 'metropolitan-hackney'
+                    const: 11809763
                 },
                 {
                     title: 'Metropolitan Hammersmith',
-                    const: 'metropolitan-hammersmith'
+                    const: 11809795
                 },
                 {
                     title: 'Metropolitan Haringey',
-                    const: 'metropolitan-haringey'
+                    const: 11809738
                 },
                 {
                     title: 'Metropolitan Harrow',
-                    const: 'metropolitan-harrow'
+                    const: 11809803
                 },
                 {
                     title: 'Metropolitan Havering',
-                    const: 'metropolitan-havering'
+                    const: 11809800
                 },
                 {
                     title: 'Metropolitan Hillingdon',
-                    const: 'metropolitan-hillingdon'
+                    const: 11809775
                 },
                 {
                     title: 'Metropolitan Hounslow',
-                    const: 'metropolitan-hounslow'
+                    const: 11809780
                 },
                 {
                     title: 'Metropolitan Islington',
-                    const: 'metropolitan-islington'
+                    const: 11809765
                 },
                 {
                     title: 'Metropolitan Kensington',
-                    const: 'metropolitan-kensington'
+                    const: 11809801
                 },
                 {
                     title: 'Metropolitan Kingston',
-                    const: 'metropolitan-kingston'
+                    const: 11809865
                 },
                 {
                     title: 'Metropolitan Lambeth',
-                    const: 'metropolitan-lambeth'
+                    const: 11809693
                 },
                 {
                     title: 'Metropolitan Lewisham',
-                    const: 'metropolitan-lewisham'
+                    const: 11809698
                 },
                 {
                     title: 'Metropolitan Merton',
-                    const: 'metropolitan-merton'
+                    const: 11809861
                 },
                 {
                     title: 'Metropolitan Newham',
-                    const: 'metropolitan-newham'
+                    const: 11809701
                 },
                 {
                     title: 'Metropolitan Redbridge',
-                    const: 'metropolitan-redbridge'
+                    const: 11809782
                 },
                 {
                     title: 'Metropolitan Richmond',
-                    const: 'metropolitan-richmond'
+                    const: 11809862
                 },
                 {
                     title: 'Metropolitan Southwark',
-                    const: 'metropolitan-southwark'
+                    const: 11809691
                 },
                 {
                     title: 'Metropolitan Sutton',
-                    const: 'metropolitan-sutton'
+                    const: 11809805
                 },
                 {
                     title: 'Metropolitan Tower Hamlets',
-                    const: 'metropolitan-tower-hamlets'
+                    const: 11809767
                 },
                 {
                     title: 'Metropolitan Waltham Forest',
-                    const: 'metropolitan-waltham-forest'
+                    const: 11809726
                 },
                 {
                     title: 'Metropolitan Wandsworth',
-                    const: 'metropolitan-wandsworth'
+                    const: 11809771
                 },
                 {
                     title: 'Metropolitan Westminster',
-                    const: 'metropolitan-westminster'
+                    const: 11809683
                 },
                 {
                     title: 'Norfolk Constabulary',
-                    const: 'norfolk-constabulary'
+                    const: 10000185
                 },
                 {
                     title: 'North Yorkshire Police',
-                    const: 'north-yorkshire-police'
+                    const: 10000189
                 },
                 {
                     title: 'Northamptonshire Police',
-                    const: 'northamptonshire-police'
+                    const: 10000191
                 },
                 {
                     title: 'Northumbria Police',
-                    const: 'northumbria-police'
+                    const: 10000195
                 },
                 {
                     title: 'Nottinghamshire Police',
-                    const: 'Nottinghamshire-police'
+                    const: 10000199
                 },
                 {
                     title: 'South Yorkshire Police',
-                    const: 'south-yorkshire-police'
+                    const: 10000218
                 },
                 {
                     title: 'Staffordshire Police',
-                    const: 'staffordshire-police'
+                    const: 10000223
                 },
                 {
                     title: 'Suffolk Constabulary',
-                    const: 'suffolk-constabulary'
+                    const: 10000233
                 },
                 {
                     title: 'Surrey Police',
-                    const: 'Surrey-police'
+                    const: 10000237
                 },
                 {
                     title: 'Sussex Police',
-                    const: 'sussex-police'
+                    const: 10000240
                 },
                 {
                     title: 'Thames Valley Police',
-                    const: 'thames-valley-police'
+                    const: 10000247
                 },
                 {
                     title: 'Warwickshire Police',
-                    const: 'warwickshire-police'
+                    const: 10000274
                 },
                 {
                     title: 'West Mercia Police',
-                    const: 'west-mercia-police'
+                    const: 10000279
                 },
                 {
                     title: 'West Midlands Police',
-                    const: 'west-midlands-police'
+                    const: 10000285
                 },
                 {
                     title: 'West Yorkshire Police',
-                    const: 'west-yorkshire-police'
+                    const: 10000291
                 },
                 {
                     title: 'Wiltshire Police',
-                    const: 'wiltshire-police'
+                    const: 10000295
                 }
             ],
             errorMessages: {

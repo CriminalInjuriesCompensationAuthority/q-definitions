@@ -7,7 +7,8 @@ const output = {
             description: 'We will not pay compensation if the offender may benefit from it.',
             maxLength: 500,
             errorMessages: {
-                required: 'Enter details of any contact you have with the offender'
+                required: 'Enter details of any contact you have with the offender',
+                maxLength: 'Description must be 500 characters or less'
             }
         },
         'q-offender-no-contact-with-offender': {

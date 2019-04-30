@@ -8,44 +8,28 @@ const output = {
         'q-applicant-name-title': {
             title: 'Title',
             type: 'string',
-            oneOf: [
-                {
-                    title: 'Mr',
-                    const: 'mr'
-                },
-                {
-                    title: 'Mrs',
-                    const: 'mrs'
-                },
-                {
-                    title: 'Miss',
-                    const: 'miss'
-                },
-                {
-                    title: 'Ms',
-                    const: 'ms'
-                },
-                {
-                    title: 'Dr',
-                    const: 'dr'
-                }
-            ],
+            maxLength: 6,
             errorMessages: {
-                required: 'Enter your title'
+                required: 'Enter your title',
+                maxLength: 'Title must be 6 characters or less'
             }
         },
         'q-applicant-name-firstname': {
             title: 'First name',
             type: 'string',
+            maxLength: 70,
             errorMessages: {
-                required: 'Enter your first name'
+                required: 'Enter your first name',
+                maxLength: 'First name must be 70 characters or less'
             }
         },
         'q-applicant-name-lastname': {
             title: 'Last name',
             type: 'string',
+            maxLength: 70,
             errorMessages: {
-                required: 'Enter your last name'
+                required: 'Enter your last name',
+                maxLength: 'Last name must be 70 characters or less'
             }
         }
     }

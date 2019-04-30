@@ -6,27 +6,27 @@ const output = {
     additionalProperties: false,
     properties: {
         'q--which-welsh-police-force-is-investigating-the-crime': {
-            type: 'string',
+            type: 'integer',
             oneOf: [
                 {
                     title: 'British Transport Police',
-                    const: 'transport'
+                    const: 10000001
                 },
                 {
                     title: 'Dyfed-Powys',
-                    const: 'dyfed'
+                    const: 10000109
                 },
                 {
                     title: 'Gwent',
-                    const: 'gwent'
+                    const: 10000147
                 },
                 {
                     title: 'North Wales',
-                    const: 'north-wales'
+                    const: 10000187
                 },
                 {
                     title: 'South Wales',
-                    const: 'south-wales'
+                    const: 10000215
                 }
             ],
             errorMessages: {

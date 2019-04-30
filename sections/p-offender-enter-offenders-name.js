@@ -8,8 +8,10 @@ const output = {
         'q-offenders-name': {
             type: 'string',
             description: 'We will not contact the offender.',
+            maxLength: 120,
             errorMessages: {
-                required: "Enter the offender's name"
+                required: "Enter the offender's name",
+                maxLength: "Offender's name must be 120 characters or less"
             }
         }
     }

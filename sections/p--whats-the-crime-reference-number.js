@@ -11,7 +11,8 @@ const output = {
                 'This is the reference number the police gave the crime when it was reported.',
             maxLength: 30,
             errorMessages: {
-                required: 'Enter the crime reference number'
+                required: 'Enter the crime reference number',
+                maxLength: 'Crime reference number must be 30 characters or less'
             }
         }
     }

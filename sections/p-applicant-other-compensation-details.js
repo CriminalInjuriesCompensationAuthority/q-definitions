@@ -14,8 +14,10 @@ const output = {
         'q-applicant-who-did-you-apply-to': {
             type: 'string',
             title: 'Who have you applied to or received compensation from?',
+            maxLength: 50,
             errorMessages: {
-                required: 'Enter who you applied to or received compensation from'
+                required: 'Enter who you applied to or received compensation from',
+                maxLength: 'Who you applied to or received compensation from must be 50 characters or less'
             }
         },
         'q-applicant-has-a-decision-been-made': {
@@ -29,8 +31,10 @@ const output = {
         'q-how-much-was-award': {
             type: 'string',
             title: 'How much was the award?',
+            maxLength: 50,
             errorMessages: {
-                required: 'Enter an amount'
+                required: 'Enter an amount',
+                maxLength: 'Award amount must be 50 characters or less'
             }
         },
         'q-when-will-you-find-out': {
@@ -38,8 +42,10 @@ const output = {
             title: 'When will you find out?',
             description:
                 'Enter an approximate date, for example, December 2019. If you do not know you can say so.',
+            maxLength: 50,
             errorMessages: {
-                required: 'Enter an approximate date'
+                required: 'Enter an approximate date',
+                maxLength: 'When will you find out must be 50 characters or less'
             }
         }
     },
