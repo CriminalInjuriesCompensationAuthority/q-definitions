@@ -1,2 +1,3 @@
 p-applicant-declaration:
 - goto: p-applicant-british-citizen-or-eu-national
+- type: start

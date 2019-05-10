@@ -1,4 +1,4 @@
-@MVP-not-finished
+@MVP
 Feature: Error message for future dates
     As a system I will display an error message
     If the user enters a future date
@@ -6,8 +6,8 @@ Feature: Error message for future dates
 
     Scenario Outline: User has entered a future date
         Given I am on <Page>
+        And I enter a future date for <Question>
         When I click continue
-        And I have entered a future date for the <Question>
         Then I will see an <Error>
 
         Examples:

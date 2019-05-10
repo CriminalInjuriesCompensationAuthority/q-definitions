@@ -1,4 +1,4 @@
-@MVP-not-finished
+ @MVP-not-finished
 Feature: User submits their application and a reference number is generated
     As a system I want to generate a CICA reference
     When a user submits their application

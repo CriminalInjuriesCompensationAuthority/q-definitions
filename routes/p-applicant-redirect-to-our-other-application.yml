@@ -1,3 +1,2 @@
 p-applicant-redirect-to-our-other-application:
-    - goto: 'p-applicant-redirect-to-our-other-application'
-    #https://www.cica.gov.uk/OAS/Account/Create
+- type: final

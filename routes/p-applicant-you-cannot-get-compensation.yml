@@ -1,2 +1,2 @@
 p-applicant-you-cannot-get-compensation:
-- goto: p-applicant-did-the-crime-happen-once-or-over-time
+- type: final

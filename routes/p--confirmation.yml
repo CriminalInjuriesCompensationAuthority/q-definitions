@@ -1,2 +1,2 @@
 p--confirmation:
-- goto: p-applicant-redirect-to-our-other-application
+- type: final
