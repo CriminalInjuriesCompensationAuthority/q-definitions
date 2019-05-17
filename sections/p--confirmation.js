@@ -26,7 +26,7 @@ const output = {
                         iconFallbackText: "Warning"
                     }) }}
                     <p class="govuk-body">You can contact our Customer Service Centre on 0300 003 3601. Select option 8 when the call is answered.</p>
-                    <p><a href="/application/confirmation-page-if-automatic-nil">What did you think of this service?</a> (takes 30 seconds)</p>
+                    <p><a href="https://www.surveymonkey.com/r/Privatebetafeedback">What did you think of this service?</a> (takes 30 seconds)</p>
                     <p><a href="/application/application-submitted-email">Check your inbox</a></p>
                 </div>
             `

@@ -32,8 +32,11 @@ const output = {
                 html: '
                     <p class="govuk-body">You can contact us for help with your application on 0300 003 3601. Select option 8.</p>
                     <p class="govuk-body">Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>
-                    <p class="govuk-body">For practical or emotional support near you <a href="https://www.victimsinformationservice.org.uk/" target="_blank">visit the Victim and Witness Information</a> website.</p>
-                    <p class="govuk-body">There is a different website if you live in <a href="https://www.mygov.scot/victim-witness-support/">Scotland</a>.</p>
+                    <p class="govuk-body">You can get practical or emotional support depending on where you live:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                       <li>in England and Wales <a href="https://www.victimandwitnessinformation.org.uk/">visit the Victim and Witness Information website</a></li>
+                       <li>in Scotland <a href="https://www.mygov.scot/victim-witness-support/">visit the mygov.scot website</a></li>
+                    </ul>
                 '
                 }) }}
             `
@@ -44,11 +47,11 @@ const output = {
             oneOf: [
                 {
                     title: 'Option 1: Sexual assault or abuse',
-                    const: 'option-1-sexual-assault-or-abuse'
+                    const: 'option-1:-sexual-assault-or-abuse'
                 },
                 {
                     title: 'Option 2: Sexual assault or abuse and other injuries or losses',
-                    const: 'option-2-sexual-assault-or-abuse-and-other-injuries-ro-losses'
+                    const: 'option-2:-sexual-assault-or-abuse-and-other-injuries-ro-losses'
                 }
             ],
             errorMessages: {

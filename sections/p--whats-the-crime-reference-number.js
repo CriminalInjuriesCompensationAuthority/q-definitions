@@ -5,7 +5,7 @@ const output = {
     additionalProperties: false,
     properties: {
         'q-whats-the-crime-reference-number': {
-            title: "What's the crime reference number?",
+            title: 'What is the crime reference number?',
             type: 'string',
             description:
                 'This is the reference number the police gave the crime when it was reported.',

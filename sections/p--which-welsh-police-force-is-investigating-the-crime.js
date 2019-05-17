@@ -1,6 +1,6 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    title: 'What police force is dealing with the crime?',
+    title: 'Which Welsh police force is investigating the crime?',
     type: 'object',
     required: ['q--which-welsh-police-force-is-investigating-the-crime'],
     additionalProperties: false,

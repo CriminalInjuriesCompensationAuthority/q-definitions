@@ -6,8 +6,9 @@ const output = {
     properties: {
         'you-need-to-ccontact-us': {
             description: `
-                <p class="govuk-body-l">You need to contact us to proceed with your application</p>
-                <p class="govuk-body">You may continue your application, but any future application for the same injuries will be refused.</p>
+                <p class="govuk-body">We need to check if you are eligible for compensation.</p>
+                <p class="govuk-body">Call us on 0300 003 3601. Select option 8.</p>
+                <p class="govuk-body">Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>
             `
         }
     }

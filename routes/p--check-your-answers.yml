@@ -1,3 +1,2 @@
 p--check-your-answers:
 - goto: p--confirmation
-- type: summary

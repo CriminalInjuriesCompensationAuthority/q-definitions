@@ -15,6 +15,7 @@ const output = {
         },
         'q-applicant-building-and-street2': {
             type: 'string',
+            title: `<span class='govuk-visually-hidden'>Building and street line 2`,
             maxLength: 60,
             errorMessages: {
                 maxLength: 'Second line of address must be less than 60 characters'
@@ -23,7 +24,7 @@ const output = {
         'q-applicant-town-or-city': {
             type: 'string',
             title: 'Town or city',
-            maxLength: 60,
+            maxLength: 32,
             errorMessages: {
                 required: 'Enter the town or city where you live',
                 maxLength: 'Town or city must be 60 characters or less'
@@ -31,15 +32,15 @@ const output = {
         },
         'q-applicant-county': {
             type: 'string',
-            title: 'County',
-            maxLength: 60,
+            title: 'County (optional)',
+            maxLength: 32,
             errorMessages: {
                 maxLength: 'County must be 60 characters or less'
             }
         },
         'q-applicant-postcode': {
             type: 'string',
-            title: 'Postcode',
+            title: 'Postcode (optional)',
             maxLength: 10,
             errorMessages: {
                 maxLength: 'Postcode must be 10 characters or less'
