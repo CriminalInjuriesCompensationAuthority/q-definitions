@@ -19,7 +19,7 @@ const output = {
                 anyOf: [
                     {
                         title: 'I have no contact with the offender',
-                        const: 'none'
+                        const: 'i-have-no-contact-with-the-offender'
                     }
                 ]
             }

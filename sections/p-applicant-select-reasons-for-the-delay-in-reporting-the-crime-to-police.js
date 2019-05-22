@@ -12,6 +12,7 @@ const output = {
             type: 'array',
             maxItems: 3,
             uniqueItems: true,
+            description: 'Select all options that apply to you.',
             items: {
                 anyOf: [
                     {

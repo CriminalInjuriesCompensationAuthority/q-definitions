@@ -21,7 +21,7 @@ const output = {
         'q-applicant-applied-for-other-compensation-briefly-explain-why-not': {
             type: 'string',
             title: 'Briefly explain why not.',
-            maxLength: 500,
+            maxLength: 499,
             errorMessages: {
                 required:
                     'Explain why you did not apply for or receive any other form of compensation',
