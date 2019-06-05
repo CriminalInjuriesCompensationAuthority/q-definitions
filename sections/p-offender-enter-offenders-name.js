@@ -10,10 +10,14 @@ const output = {
             title: 'Offenders name',
             description: 'We will not contact the offender.',
             maxLength: 120,
-            errorMessages: {
-                required: "Enter the offender's name",
+            errorMessage: {
                 maxLength: "Offender's name must be 120 characters or less"
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-offenders-name': "Enter the offender's name"
         }
     }
 };

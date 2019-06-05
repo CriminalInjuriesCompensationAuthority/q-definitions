@@ -9,8 +9,7 @@ const output = {
             format: 'date-time',
             title: 'When did it start?',
             description: 'For example, 03 2018. You can enter an approximate date.',
-            errorMessages: {
-                required: 'Enter the date the crime started and include a month and year',
+            errorMessage: {
                 format: 'Enter the date the crime started and include a month and year'
             }
         },
@@ -23,6 +22,12 @@ const output = {
                             <p>Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>'
                 }) }}
             `
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-when-did-the-crime-start':
+                'Enter the date the crime started and include a month and year'
         }
     }
 };

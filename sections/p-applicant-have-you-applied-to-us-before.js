@@ -10,17 +10,14 @@ const output = {
     properties: {
         'q-applicant-have-you-applied-to-us-before': {
             title: 'Have you applied to us before?',
-            type: 'boolean',
-            errorMessages: {
-                required: 'Select yes if you have applied to us before'
-            }
+            type: 'boolean'
         },
         'q-enter-your-previous-reference-number': {
             type: 'string',
             title: 'Enter your previous reference number if you know it (optional)',
             maxLength: 50,
-            errorMessages: {
-                MaxLength: 'Previous reference number must be 50 characters or less'
+            errorMessage: {
+                maxLength: 'Previous reference number must be 50 characters or less'
             }
         }
     },
@@ -47,6 +44,12 @@ const output = {
                     ]
                 }
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-have-you-applied-to-us-before':
+                'Select yes if you have applied to us before'
         }
     }
 };

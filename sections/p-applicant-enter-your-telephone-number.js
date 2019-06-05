@@ -10,11 +10,15 @@ const output = {
             description:
                 'We may use this to contact you if we need to clarify something on your application form.',
             maxLength: 20,
-            errorMessages: {
-                required:
-                    'Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192',
+            errorMessage: {
                 maxLength: 'Telephone number must be 20 characters or less'
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-telephone-number':
+                'Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192'
         }
     }
 };

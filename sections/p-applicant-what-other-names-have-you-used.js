@@ -8,10 +8,14 @@ const output = {
             type: 'string',
             title: 'What other names have you used?',
             maxLength: 50,
-            errorMessages: {
-                required: 'Enter the other names you have used',
+            errorMessage: {
                 maxLength: 'Other names you have used must be 50 characters or less'
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-what-other-names-have-you-used': 'Enter the other names you have used'
         }
     }
 };

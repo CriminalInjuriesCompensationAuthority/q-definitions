@@ -10,10 +10,14 @@ const output = {
             description:
                 "We'll use this to contact you about your application for example, to request more information.",
             maxLength: 50,
-            errorMessages: {
-                required: 'Enter your email address',
+            errorMessage: {
                 maxLength: 'Email address must be 50 characters or less'
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-email-address': 'Enter your email address'
         }
     }
 };

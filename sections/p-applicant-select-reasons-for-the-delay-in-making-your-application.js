@@ -32,20 +32,23 @@ const output = {
                         const: 'other-reasons'
                     }
                 ]
-            },
-            errorMessages: {
-                required:
-                    'Select if you were under 18, advised to wait, medical reasons or other reasons'
             }
         },
         'q-applicant-select-reasons-for-the-delay-in-making-your-application': {
             title: 'Briefly explain these reasons',
             type: 'string',
             maxLength: 500,
-            errorMessages: {
-                required: 'Explain the reasons for the delay in making your application',
+            errorMessage: {
                 maxLength: 'Explanation must be 500 characters or less'
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-reason-for-delay-in-application':
+                'Select if you were under 18, advised to wait, medical reasons or other reasons',
+            'q-applicant-select-reasons-for-the-delay-in-making-your-application':
+                'Explain the reasons for the delay in making your application'
         }
     }
 };

@@ -15,26 +15,20 @@ const output = {
             type: 'string',
             title: 'Who have you applied to or received compensation from?',
             maxLength: 50,
-            errorMessages: {
-                required: 'Enter who you applied to or received compensation from',
+            errorMessage: {
                 maxLength:
                     'Who you applied to or received compensation from must be 50 characters or less'
             }
         },
         'q-applicant-has-a-decision-been-made': {
             title: 'Have they made a decision?',
-            type: 'boolean',
-            errorMessages: {
-                required:
-                    'Select yes if you have received a decision about the other compensation claim'
-            }
+            type: 'boolean'
         },
         'q-how-much-was-award': {
             type: 'string',
             title: 'How much was the award?',
             maxLength: 50,
-            errorMessages: {
-                required: 'Enter an amount',
+            errorMessage: {
                 maxLength: 'Award amount must be 50 characters or less'
             }
         },
@@ -44,8 +38,7 @@ const output = {
             description:
                 'Enter an approximate date, for example, December 2019. If you do not know you can say so.',
             maxLength: 50,
-            errorMessages: {
-                required: 'Enter an approximate date',
+            errorMessage: {
                 maxLength: 'When will you find out must be 50 characters or less'
             }
         }
@@ -66,7 +59,8 @@ const output = {
                     'q-applicant-has-a-decision-been-made': {
                         const: false
                     }
-                }
+                },
+                required: ['q-applicant-has-a-decision-been-made']
             },
             then: {
                 required: ['q-when-will-you-find-out'],
@@ -76,6 +70,11 @@ const output = {
                         'q-applicant-has-a-decision-been-made',
                         'q-when-will-you-find-out'
                     ]
+                },
+                errorMessage: {
+                    required: {
+                        'q-when-will-you-find-out': 'Enter an approximate date'
+                    }
                 }
             }
         },
@@ -85,7 +84,8 @@ const output = {
                     'q-applicant-has-a-decision-been-made': {
                         const: true
                     }
-                }
+                },
+                required: ['q-applicant-has-a-decision-been-made']
             },
             then: {
                 required: ['q-how-much-was-award'],
@@ -95,8 +95,21 @@ const output = {
                         'q-applicant-has-a-decision-been-made',
                         'q-how-much-was-award'
                     ]
+                },
+                errorMessage: {
+                    required: {
+                        'q-how-much-was-award': 'Enter an amount'
+                    }
                 }
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-who-did-you-apply-to':
+                'Enter who you applied to or received compensation from',
+            'q-applicant-has-a-decision-been-made':
+                'Select yes if you have received a decision about the other compensation claim'
         }
     }
 };

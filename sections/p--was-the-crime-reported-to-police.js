@@ -6,10 +6,7 @@ const output = {
     properties: {
         'q-was-the-crime-reported-to-police': {
             type: 'boolean',
-            title: 'Was the crime reported to the police?',
-            errorMessages: {
-                required: 'Select yes if the crime was reported to the police'
-            }
+            title: 'Was the crime reported to the police?'
         },
         'dont-know-if-crime-reported': {
             description: `
@@ -19,6 +16,12 @@ const output = {
                         <p>Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>'
                 }) }}
             `
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-was-the-crime-reported-to-police':
+                'Select yes if the crime was reported to the police'
         }
     }
 };

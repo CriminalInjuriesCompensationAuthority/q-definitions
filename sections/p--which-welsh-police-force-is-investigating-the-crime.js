@@ -28,10 +28,12 @@ const output = {
                     title: 'South Wales',
                     const: 10000215
                 }
-            ],
-            errorMessages: {
-                required: 'Select a police force'
-            }
+            ]
+        }
+    },
+    errorMessage: {
+        required: {
+            'q--which-welsh-police-force-is-investigating-the-crime': 'Select a police force'
         }
     }
 };

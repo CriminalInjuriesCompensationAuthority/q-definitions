@@ -9,8 +9,7 @@ const output = {
             format: 'date-time',
             title: 'When did the crime happen?',
             description: 'For example, 31 3 2018. You can enter an approximate date.',
-            errorMessages: {
-                required: 'Enter the date the crime happened and include a day, month and year',
+            errorMessage: {
                 format: 'The date the crime happened must be in the past'
             }
         },
@@ -22,6 +21,12 @@ const output = {
                             <p>Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>'
                 }) }}
             `
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-when-did-the-crime-happen':
+                'Enter the date the crime happened and include a day, month and year'
         }
     }
 };

@@ -9,8 +9,7 @@ const output = {
             title: 'Title',
             type: 'string',
             maxLength: 6,
-            errorMessages: {
-                required: 'Enter your title',
+            errorMessage: {
                 maxLength: 'Title must be 6 characters or less'
             }
         },
@@ -18,8 +17,7 @@ const output = {
             title: 'First name',
             type: 'string',
             maxLength: 70,
-            errorMessages: {
-                required: 'Enter your first name',
+            errorMessage: {
                 maxLength: 'First name must be 70 characters or less'
             }
         },
@@ -27,10 +25,16 @@ const output = {
             title: 'Last name',
             type: 'string',
             maxLength: 70,
-            errorMessages: {
-                required: 'Enter your last name',
+            errorMessage: {
                 maxLength: 'Last name must be 70 characters or less'
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-name-title': 'Enter your title',
+            'q-applicant-name-firstname': 'Enter your first name',
+            'q-applicant-name-lastname': 'Enter your last name'
         }
     }
 };

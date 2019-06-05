@@ -6,8 +6,7 @@ const output = {
             title: 'If you have contact with the offender, describe it below',
             description: 'We will not pay compensation if the offender may benefit from it.',
             maxLength: 500,
-            errorMessages: {
-                required: 'Enter details of any contact you have with the offender',
+            errorMessage: {
                 maxLength: 'Description must be 500 characters or less'
             }
         },
@@ -34,7 +33,13 @@ const output = {
                 }
             },
             then: {
-                required: ['q-offender-contact-description']
+                required: ['q-offender-contact-description'],
+                errorMessage: {
+                    required: {
+                        'q-offender-no-contact-with-offender':
+                            'Enter details of any contact you have with the offender'
+                    }
+                }
             }
         }
     }

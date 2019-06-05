@@ -53,10 +53,12 @@ const output = {
                     title: 'Option 2: Sexual assault or abuse and other injuries or losses',
                     const: 'option-2:-sexual-assault-or-abuse-and-other-injuries-ro-losses'
                 }
-            ],
-            errorMessages: {
-                required: 'Select either Option 1 or Option 2'
-            }
+            ]
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-option': 'Select either Option 1 or Option 2'
         }
     }
 };

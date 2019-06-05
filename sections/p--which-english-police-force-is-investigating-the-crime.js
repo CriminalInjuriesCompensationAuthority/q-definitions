@@ -292,10 +292,13 @@ const output = {
                     title: 'Wiltshire Police',
                     const: 10000295
                 }
-            ],
-            errorMessages: {
-                required: 'Select a police force from the list'
-            }
+            ]
+        }
+    },
+    errorMessage: {
+        required: {
+            'q--which-english-police-force-is-investigating-the-crime':
+                'Select a police force from the list'
         }
     }
 };

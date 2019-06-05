@@ -28,19 +28,23 @@ const output = {
                         const: 'other'
                     }
                 ]
-            },
-            errorMessages: {
-                required: 'Select if you were under 18, unable to report the crime or other reasons'
             }
         },
         'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police': {
             title: 'Briefly explain these reasons',
             type: 'string',
             maxLength: 500,
-            errorMessages: {
-                required: 'Explain the reasons for the delay in reporting the crime to the police',
+            errorMessage: {
                 maxLength: 'Explanation must be 500 characters or less'
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-reason-for-delay-in-reporting-crime':
+                'Select if you were under 18, unable to report the crime or other reasons',
+            'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police':
+                'Explain the reasons for the delay in reporting the crime to the police'
         }
     }
 };

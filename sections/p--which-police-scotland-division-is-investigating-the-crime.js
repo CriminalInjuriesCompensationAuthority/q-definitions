@@ -64,10 +64,13 @@ const output = {
                     title: 'The Lothians and Scottish Borders',
                     const: 13400413
                 }
-            ],
-            errorMessages: {
-                required: 'Select a Police Scotland division '
-            }
+            ]
+        }
+    },
+    errorMessage: {
+        required: {
+            'q--which-scottish-police-force-is-investigating-the-crime':
+                'Select a Police Scotland division '
         }
     }
 };

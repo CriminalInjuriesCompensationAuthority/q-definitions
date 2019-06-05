@@ -9,8 +9,7 @@ const output = {
             type: 'string',
             title: 'Town or city',
             maxLength: 60,
-            errorMessages: {
-                required: 'Enter the town or city where the crime happened',
+            errorMessage: {
                 maxLength: 'Town or city must be 60 characters or less'
             }
         },
@@ -20,10 +19,16 @@ const output = {
             description:
                 'For example, the name of a street, business, building or nearby local landmark. You can enter more than one.',
             maxLength: 60,
-            errorMessages: {
-                required: 'Enter the name of a street, business, building or nearby local landmark',
+            errorMessage: {
                 maxLength: 'Location must be 60 characters or less'
             }
+        }
+    },
+    errorMessage: {
+        required: {
+            'q-applicant-english-location':
+                'Enter the name of a street, business, building or nearby local landmark',
+            'q-applicant-english-town-or-city': 'Enter the town or city where the crime happened'
         }
     }
 };
