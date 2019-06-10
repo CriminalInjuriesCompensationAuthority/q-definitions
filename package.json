@@ -37,14 +37,14 @@
             ".eslintignore",
             ".eslintrc.js",
             ".huskyrc.js",
+            ".lintstagedrc.js",
             ".prettierrc.js",
             "jest.config.js",
-            ".gitignore",
-            ".lintstagedrc.js"
+            ".gitignore"
         ],
         "files": [
-            "LICENSE",
             ".editorconfig",
+            "LICENSE",
             "stuff/____README____"
         ]
     },

@@ -31,7 +31,8 @@ const output = {
                     'q-applicant-have-you-applied-for-or-received-any-other-compensation': {
                         const: false
                     }
-                }
+                },
+                required: ['q-applicant-have-you-applied-for-or-received-any-other-compensation']
             },
             then: {
                 required: ['q-applicant-applied-for-other-compensation-briefly-explain-why-not'],
