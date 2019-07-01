@@ -2,7 +2,10 @@ const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
     propertyNames: {
-        enum: ['q-applicant-have-you-applied-for-or-received-any-other-compensation']
+        enum: [
+            'q-applicant-have-you-applied-for-or-received-any-other-compensation',
+            'q-applicant-applied-for-other-compensation-briefly-explain-why-not'
+        ]
     },
     properties: {
         'q-applicant-have-you-applied-for-or-received-any-other-compensation': {
