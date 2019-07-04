@@ -7,11 +7,13 @@ const output = {
         'case-reference': {
             type: 'string',
             pattern: '^[0-9]{2}\\[0-9]{6}$',
-            errorMessages: {
-                required: 'Case reference is required',
+            errorMessage: {
                 pattern: 'Invalid case reference'
             }
         }
+    },
+    errorMessage: {
+        required: 'Case reference is required'
     }
 };
 
