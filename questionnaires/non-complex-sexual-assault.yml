@@ -1,8 +1,9 @@
 template-name: apply-for-compensation
 start-page: p-applicant-declaration
 referrer: start-page
+confirmation: p--confirmation
 summary: p--check-your-answers
-version: 0.2.0
+version: 0.2.1
 meta:
     onComplete:
         tasks:
