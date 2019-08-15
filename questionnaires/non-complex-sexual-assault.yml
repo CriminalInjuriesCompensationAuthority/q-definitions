@@ -7,7 +7,7 @@ version: 0.2.1
 meta:
     onComplete:
         tasks:
-            - emailTemplateId: 1ddf1d87-09b3-4a2b-aa27-d73823f4a886
+            - emailTemplateId: cb79653c-cf6e-44d4-8c03-087ba21cfd01
               emailTemplatePlaceholderMap:
                 applicantEmail: "/answers/p-applicant-enter-your-email-address/q-applicant-email-address"
                 caseReference: "/answers/system/case-reference"
