@@ -3,7 +3,7 @@ start-page: p-applicant-declaration
 referrer: start-page
 confirmation: p--confirmation
 summary: p--check-your-answers
-version: 0.2.1
+version: 0.2.2
 meta:
     onComplete:
         tasks:

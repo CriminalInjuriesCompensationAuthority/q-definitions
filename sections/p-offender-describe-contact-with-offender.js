@@ -1,7 +1,7 @@
 const output = {
     type: 'object',
     properties: {
-        'q-offender-contact-description': {
+        'q-offender-describe-contact-with-offender': {
             type: 'string',
             title: 'If you have contact with the offender, describe it below',
             description: 'We will not pay compensation if the offender may benefit from it.',
@@ -10,7 +10,7 @@ const output = {
                 maxLength: 'Description must be 500 characters or less'
             }
         },
-        'q-offender-no-contact-with-offender': {
+        'q-offender-i-have-no-contact-with-offender': {
             type: 'array',
             maxItems: 1,
             uniqueItems: true,
@@ -29,14 +29,14 @@ const output = {
         'if-not-checked-then-q-offender-contact-description-is-required': {
             if: {
                 not: {
-                    required: ['q-offender-no-contact-with-offender']
+                    required: ['q-offender-i-have-no-contact-with-offender']
                 }
             },
             then: {
-                required: ['q-offender-contact-description'],
+                required: ['q-offender-describe-contact-with-offender'],
                 errorMessage: {
                     required: {
-                        'q-offender-no-contact-with-offender':
+                        'q-offender-i-have-no-contact-with-offender':
                             'Enter details of any contact you have with the offender'
                     }
                 }

@@ -1,5 +1,5 @@
 p-applicant-where-in-scotland-did-it-happen:
 - goto: p-offender-do-you-know-the-name-of-the-offender
-  if: [==, q-was-the-crime-reported-to-police, false]
+  if: [==, q--was-the-crime-reported-to-police, false]
 - goto: p--which-police-scotland-division-is-investigating-the-crime
-  if: [==, q-was-the-crime-reported-to-police, true]
+  if: [==, q--was-the-crime-reported-to-police, true]

@@ -2,10 +2,10 @@ const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
     title: 'Enter their name',
-    required: ['q-offenders-name'],
+    required: ['q-offender-enter-offenders-name'],
     additionalProperties: false,
     properties: {
-        'q-offenders-name': {
+        'q-offender-enter-offenders-name': {
             type: 'string',
             title: 'Offenders name',
             description: 'We will not contact the offender.',
@@ -17,7 +17,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-offenders-name': "Enter the offender's name"
+            'q-offender-enter-offenders-name': "Enter the offender's name"
         }
     }
 };

@@ -13,7 +13,7 @@ const output = {
                 maxLength: 'First line of address must be less than 60 characters'
             }
         },
-        'q-applicant-building-and-street2': {
+        'q-applicant-building-and-street-2': {
             type: 'string',
             title: `<span class='govuk-visually-hidden'>Building and street line 2`,
             maxLength: 60,

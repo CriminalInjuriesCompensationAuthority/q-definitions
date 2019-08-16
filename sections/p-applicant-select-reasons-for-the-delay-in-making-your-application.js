@@ -2,12 +2,12 @@ const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
     required: [
-        'q-applicant-reason-for-delay-in-application',
+        'q-applicant-explain-reason-for-delay-application',
         'q-applicant-select-reasons-for-the-delay-in-making-your-application'
     ],
     additionalProperties: false,
     properties: {
-        'q-applicant-reason-for-delay-in-application': {
+        'q-applicant-explain-reason-for-delay-application': {
             title: 'Select reasons for the delay in making your application',
             type: 'array',
             maxItems: 4,
@@ -45,7 +45,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-reason-for-delay-in-application':
+            'q-applicant-explain-reason-for-delay-application':
                 'Select if you were under 18, advised to wait, medical reasons or other reasons',
             'q-applicant-select-reasons-for-the-delay-in-making-your-application':
                 'Explain the reasons for the delay in making your application'
