@@ -1,10 +1,10 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
-    required: ['q-whats-the-crime-reference-number'],
+    required: ['q--whats-the-crime-reference-number'],
     additionalProperties: false,
     properties: {
-        'q-whats-the-crime-reference-number': {
+        'q--whats-the-crime-reference-number': {
             title: 'What is the crime reference number?',
             type: 'string',
             description:
@@ -17,7 +17,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-whats-the-crime-reference-number': 'Enter the crime reference number'
+            'q--whats-the-crime-reference-number': 'Enter the crime reference number'
         }
     }
 };

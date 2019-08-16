@@ -1,10 +1,10 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
-    required: ['q-was-the-crime-reported-to-police'],
+    required: ['q--was-the-crime-reported-to-police'],
     additionalProperties: false,
     properties: {
-        'q-was-the-crime-reported-to-police': {
+        'q--was-the-crime-reported-to-police': {
             type: 'boolean',
             title: 'Was the crime reported to the police?'
         },
@@ -20,7 +20,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-was-the-crime-reported-to-police':
+            'q--was-the-crime-reported-to-police':
                 'Select yes if the crime was reported to the police'
         }
     }

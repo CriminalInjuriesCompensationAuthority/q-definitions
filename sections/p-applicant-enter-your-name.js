@@ -2,10 +2,10 @@ const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     title: 'Enter your name',
     type: 'object',
-    required: ['q-applicant-name-title', 'q-applicant-name-firstname', 'q-applicant-name-lastname'],
+    required: ['q-applicant-title', 'q-applicant-first-name', 'q-applicant-last-name'],
     additionalProperties: false,
     properties: {
-        'q-applicant-name-title': {
+        'q-applicant-title': {
             title: 'Title',
             type: 'string',
             maxLength: 6,
@@ -13,7 +13,7 @@ const output = {
                 maxLength: 'Title must be 6 characters or less'
             }
         },
-        'q-applicant-name-firstname': {
+        'q-applicant-first-name': {
             title: 'First name',
             type: 'string',
             maxLength: 70,
@@ -21,7 +21,7 @@ const output = {
                 maxLength: 'First name must be 70 characters or less'
             }
         },
-        'q-applicant-name-lastname': {
+        'q-applicant-last-name': {
             title: 'Last name',
             type: 'string',
             maxLength: 70,
@@ -32,8 +32,8 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-name-title': 'Enter your title',
-            'q-applicant-name-firstname': 'Enter your first name',
+            'q-applicant-title': 'Enter your title',
+            'q-applicant-first-name': 'Enter your first name',
             'q-applicant-name-lastname': 'Enter your last name'
         }
     }

@@ -1,10 +1,10 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
-    required: ['q-applicant-email-address'],
+    required: ['q-applicant-enter-your-email-address'],
     additionalProperties: false,
     properties: {
-        'q-applicant-email-address': {
+        'q-applicant-enter-your-email-address': {
             type: 'string',
             title: 'Enter your email address',
             description:
@@ -17,7 +17,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-email-address': 'Enter your email address'
+            'q-applicant-enter-your-email-address': 'Enter your email address'
         }
     }
 };

@@ -1,10 +1,10 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
-    required: ['q-applicant-telephone-number'],
+    required: ['q-applicant-enter-your-telephone-number'],
     additionalProperties: false,
     properties: {
-        'q-applicant-telephone-number': {
+        'q-applicant-enter-your-telephone-number': {
             type: 'string',
             title: 'Enter your telephone number',
             description:
@@ -17,7 +17,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-telephone-number':
+            'q-applicant-enter-your-telephone-number':
                 'Enter a telephone number, like 01632 960 001, 07700 900 982 or +44 0808 157 0192'
         }
     }
