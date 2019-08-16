@@ -9,7 +9,7 @@ meta:
         tasks:
             - emailTemplateId: cb79653c-cf6e-44d4-8c03-087ba21cfd01
               emailTemplatePlaceholderMap:
-                applicantEmail: "/answers/p-applicant-enter-your-email-address/q-applicant-email-address"
+                applicantEmail: "/answers/p-applicant-enter-your-email-address/q-applicant-enter-your-email-address"
                 caseReference: "/answers/system/case-reference"
 pages:
     - p-applicant-declaration
