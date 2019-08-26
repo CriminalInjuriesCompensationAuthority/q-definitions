@@ -2,10 +2,10 @@ const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     title: 'Which Police Scotland division is investigating the crime?',
     type: 'object',
-    required: ['q--which-scottish-police-force-is-investigating-the-crime'],
+    required: ['q--which-police-scotland-division-is-investigating-the-crime'],
     additionalProperties: false,
     properties: {
-        'q--which-scottish-police-force-is-investigating-the-crime': {
+        'q--which-police-scotland-division-is-investigating-the-crime': {
             type: 'integer',
             oneOf: [
                 {
@@ -69,7 +69,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q--which-scottish-police-force-is-investigating-the-crime':
+            'q--which-police-scotland-division-is-investigating-the-crime':
                 'Select a Police Scotland division '
         }
     }

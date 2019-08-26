@@ -34,7 +34,7 @@ const output = {
         required: {
             'q-applicant-title': 'Enter your title',
             'q-applicant-first-name': 'Enter your first name',
-            'q-applicant-name-lastname': 'Enter your last name'
+            'q-applicant-last-name': 'Enter your last name'
         }
     }
 };
