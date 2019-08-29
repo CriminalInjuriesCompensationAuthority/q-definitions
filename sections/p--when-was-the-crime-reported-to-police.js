@@ -10,7 +10,8 @@ const output = {
             title: 'When was the crime reported to the police?',
             description: 'For example, 31 3 2018. You can enter an approximate date.',
             errorMessage: {
-                format: 'The date the crime was reported to the police must be in the past'
+                format:
+                    'Enter the date the crime was reported to police and include a day, month and year'
             }
         }
     },
