@@ -7,7 +7,7 @@ const output = {
     properties: {
         'q-offender-enter-offenders-name': {
             type: 'string',
-            title: 'Offenders name',
+            title: "Offender's name",
             description: 'We will not contact the offender.',
             maxLength: 120,
             errorMessage: {

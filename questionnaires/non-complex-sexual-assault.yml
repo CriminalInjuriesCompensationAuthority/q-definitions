@@ -1,9 +1,9 @@
 template-name: apply-for-compensation
 start-page: p-applicant-declaration
-referrer: https://uat.claim-criminal-injuries-compensation.apps.live-1.cloud-platform.service.justice.gov.uk/start-page
+referrer: https://uat.claim-criminal-injuries-compensation.service.justice.gov.uk/start-page
 confirmation: p--confirmation
 summary: p--check-your-answers
-version: 0.2.4
+version: 0.2.5
 meta:
     onComplete:
         tasks:

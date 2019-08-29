@@ -10,7 +10,7 @@ const output = {
             title: 'When did the crime happen?',
             description: 'For example, 31 3 2018. You can enter an approximate date.',
             errorMessage: {
-                format: 'The date the crime happened must be in the past'
+                format: 'Enter the date the crime happened and include a day, month and year'
             }
         },
         'when-did-the-crime-happen': {

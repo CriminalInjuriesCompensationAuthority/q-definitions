@@ -8,7 +8,7 @@ const output = {
             type: 'string',
             format: 'date-time',
             title: 'When did it stop?',
-            description: 'For example, 31 3 2018. You can enter an approximate date.',
+            description: 'For example, 03 2018. You can enter an approximate date.',
             errorMessage: {
                 format: 'Enter the date the crime stopped and include a month and year'
             }

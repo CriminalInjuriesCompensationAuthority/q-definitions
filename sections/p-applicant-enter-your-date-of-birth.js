@@ -8,12 +8,19 @@ const output = {
             type: 'string',
             format: 'date-time',
             title: 'Enter your date of birth',
-            description: 'For example, 31 3 2018.'
+            description: 'For example, 31 3 2018.',
+            errorMessage: {
+                format: {
+                    'q-applicant-enter-your-date-of-birth':
+                        'Enter your date of birth and include a day, month and year'
+                }
+            }
         }
     },
     errorMessage: {
         required: {
-            'q-applicant-enter-your-date-of-birth': 'Enter your date of birth'
+            'q-applicant-enter-your-date-of-birth':
+                'Enter your date of birth and include a day, month and year'
         }
     }
 };
