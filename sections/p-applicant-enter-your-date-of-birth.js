@@ -10,10 +10,7 @@ const output = {
             title: 'Enter your date of birth',
             description: 'For example, 31 3 2018.',
             errorMessage: {
-                format: {
-                    'q-applicant-enter-your-date-of-birth':
-                        'Enter your date of birth and include a day, month and year'
-                }
+                format: 'Enter your date of birth and include a day, month and year'
             }
         }
     },
