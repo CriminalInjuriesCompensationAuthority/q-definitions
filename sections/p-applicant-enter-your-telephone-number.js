@@ -10,7 +10,7 @@ const output = {
             description:
                 'We may use this to contact you if we need to clarify something on your application form.',
             maxLength: 20,
-            pattern: '^(\\+|\\d)([\\d\\s\\(\\)\\+\\-\\#]){1,19}$',
+            pattern: '^(\\+|\\d)([\\d\\s\\(\\)\\+\\-\\#]){7,19}$',
             errorMessage: {
                 maxLength: 'Telephone number must be 20 characters or less',
                 pattern:
