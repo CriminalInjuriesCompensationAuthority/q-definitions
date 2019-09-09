@@ -51,7 +51,7 @@ const output = {
                 },
                 {
                     title: 'Option 2: Sexual assault or abuse and other injuries or losses',
-                    const: 'option-2:-sexual-assault-or-abuse-and-other-injuries-ro-losses'
+                    const: 'option-2:-sexual-assault-or-abuse-and-other-injuries-or-losses'
                 }
             ]
         }
