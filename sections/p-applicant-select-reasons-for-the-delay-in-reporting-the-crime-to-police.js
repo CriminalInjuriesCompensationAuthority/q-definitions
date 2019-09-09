@@ -41,9 +41,9 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-explain-reason-for-delay-reporting':
-                'Select if you were under 18, unable to report the crime or other reasons',
             'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police':
+                'Select if you were under 18, unable to report the crime or other reasons',
+            'q-applicant-explain-reason-for-delay-reporting':
                 'Explain the reasons for the delay in reporting the crime to the police'
         }
     }
