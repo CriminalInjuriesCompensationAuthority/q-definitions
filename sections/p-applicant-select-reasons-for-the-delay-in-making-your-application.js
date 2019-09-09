@@ -45,9 +45,9 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-explain-reason-for-delay-application':
-                'Select if you were under 18, advised to wait, medical reasons or other reasons',
             'q-applicant-select-reasons-for-the-delay-in-making-your-application':
+                'Select if you were under 18, advised to wait, medical reasons or other reasons',
+            'q-applicant-explain-reason-for-delay-application':
                 'Explain the reasons for the delay in making your application'
         }
     }
