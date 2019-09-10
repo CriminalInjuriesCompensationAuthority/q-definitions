@@ -1,5 +1,5 @@
 p-applicant-select-the-option-that-applies-to-you:
 - goto: p-applicant-redirect-to-our-other-application
-  if: [==, q-applicant-option, option-2:-sexual-assault-or-abuse-and-other-injuries-ro-losses]
+  if: [==, q-applicant-option, option-2:-sexual-assault-or-abuse-and-other-injuries-or-losses]
 - goto: p--was-the-crime-reported-to-police
   if: [==, q-applicant-option, option-1:-sexual-assault-or-abuse]
