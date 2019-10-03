@@ -36,8 +36,8 @@ const output = {
                 required: ['q-offender-describe-contact-with-offender'],
                 errorMessage: {
                     required: {
-                        'q-offender-i-have-no-contact-with-offender':
-                            'Enter details of any contact you have with the offender'
+                        'q-offender-describe-contact-with-offender':
+                            'Enter details of contact with the assailant or select if you have no contact'
                     }
                 }
             }

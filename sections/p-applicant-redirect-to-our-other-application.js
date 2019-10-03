@@ -5,7 +5,7 @@ const output = {
     additionalProperties: false,
     properties: {
         'you-need-a-different-service': {
-            description: `<p class="govuk-body">To complete your application <a href="https://www.cica.gov.uk/OAS/Account/create">use our current online service</a>.</p>
+            description: `<p class="govuk-body">To complete your application <a href="https://www.gov.uk/claim-compensation-criminal-injury/make-claim">use our current online service</a>.</p>
                           {{ govukDetails({
                               summaryText: "If you need help or support",
                               html: '

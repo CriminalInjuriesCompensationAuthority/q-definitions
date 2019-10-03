@@ -7,7 +7,7 @@ const output = {
     ],
     additionalProperties: false,
     properties: {
-        'q-applicant-explain-reason-for-delay-application': {
+        'q-applicant-select-reasons-for-the-delay-in-making-your-application': {
             title: 'Select reasons for the delay in making your application',
             type: 'array',
             maxItems: 4,
@@ -34,7 +34,7 @@ const output = {
                 ]
             }
         },
-        'q-applicant-select-reasons-for-the-delay-in-making-your-application': {
+        'q-applicant-explain-reason-for-delay-application': {
             title: 'Briefly explain these reasons',
             type: 'string',
             maxLength: 500,
@@ -45,9 +45,9 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-explain-reason-for-delay-application':
-                'Select if you were under 18, advised to wait, medical reasons or other reasons',
             'q-applicant-select-reasons-for-the-delay-in-making-your-application':
+                'Select if you were under 18, advised to wait, medical reasons or other reasons',
+            'q-applicant-explain-reason-for-delay-application':
                 'Explain the reasons for the delay in making your application'
         }
     }

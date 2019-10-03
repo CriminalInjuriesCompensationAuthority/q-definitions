@@ -7,7 +7,7 @@ const output = {
     ],
     additionalProperties: false,
     properties: {
-        'q-applicant-explain-reason-for-delay-reporting': {
+        'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police': {
             title: 'Select reasons for the delay in reporting the crime to the police',
             type: 'array',
             maxItems: 3,
@@ -30,7 +30,7 @@ const output = {
                 ]
             }
         },
-        'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police': {
+        'q-applicant-explain-reason-for-delay-reporting': {
             title: 'Briefly explain these reasons',
             type: 'string',
             maxLength: 500,
@@ -41,9 +41,9 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-explain-reason-for-delay-reporting':
-                'Select if you were under 18, unable to report the crime or other reasons',
             'q-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police':
+                'Select if you were under 18, unable to report the crime or other reasons',
+            'q-applicant-explain-reason-for-delay-reporting':
                 'Explain the reasons for the delay in reporting the crime to the police'
         }
     }
