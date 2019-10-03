@@ -1,3 +1,5 @@
+'use strict';
+
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
@@ -11,7 +13,7 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-are-you-18-or-over': 'Select yes if you are over 18'
+            'q-applicant-are-you-18-or-over': 'Select yes if you are 18 or over'
         }
     }
 };

@@ -1,3 +1,5 @@
+'use strict';
+
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
@@ -17,7 +19,8 @@ const output = {
     },
     errorMessage: {
         required: {
-            'q-applicant-enter-your-email-address': 'Enter your email address'
+            'q-applicant-enter-your-email-address':
+                'Enter an email address in the correct format, like name@example.com'
         }
     }
 };

@@ -1,3 +1,5 @@
+'use strict';
+
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
@@ -14,7 +16,7 @@ const output = {
                 'p-applicant-enter-your-date-of-birth': {displayName: 'Date of birth'},
                 'p-applicant-enter-your-email-address': {displayName: 'Email address'},
                 'p-applicant-enter-your-address': {displayName: 'Address'},
-                'p-applicant-enter-your-telephone-number': {displayName: 'Telephone Number'},
+                'p-applicant-enter-your-telephone-number': {displayName: 'Telephone number'},
                 'p-applicant-british-citizen-or-eu-national': {
                     displayName: 'Are you a British citizen or EU National?'
                 },
