@@ -1,5 +1,3 @@
-'use strict';
-
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
@@ -9,7 +7,7 @@ const output = {
             description: `
                     {{ govukPanel({
                         titleText: "Application submitted",
-                        html: '<p>Your reference number is <strong>||/answers/system/case-reference||</strong></p><p>We have sent a confirmation email to <strong>||/answers/p-applicant-enter-your-email-address/q-applicant-enter-your-email-address||</strong></p>'
+                        html: '<p>Your reference number is <br /><strong>||/answers/system/case-reference||</strong></p><p>We have sent a confirmation email to <strong>||/answers/p-applicant-enter-your-email-address/q-applicant-enter-your-email-address||</strong></p>'
                     }) }}
                     
                     <p class="govuk-body-l">Thank you for submitting your application.</p>
