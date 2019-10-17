@@ -18,7 +18,7 @@ const output = {
                 {{ govukDetails({
                     summaryText: "I do not know when the crime happened",
                     html: '<p>You can contact us for help with your application on 0300 003 3601. Select option 8.</p>
-                            <p>Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>'
+                            <p>Our phone lines are open Monday to Friday 8:30am to 5pm except Wednesday when they open at 10am.</p>'
                 }) }}
             `
         }

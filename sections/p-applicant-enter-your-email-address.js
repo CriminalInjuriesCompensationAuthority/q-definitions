@@ -8,7 +8,7 @@ const output = {
             type: 'string',
             title: 'Enter your email address',
             description:
-                "We'll use this to contact you about your application for example, to request more information.",
+                "We'll use this to contact you about your application, for example, to request more information.",
             maxLength: 50,
             format: 'email',
             errorMessage: {

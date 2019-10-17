@@ -11,7 +11,7 @@ const output = {
         'q-applicant-have-you-applied-for-or-received-any-other-compensation': {
             title: 'Have you applied for or received any other form of compensation?',
             description:
-                'For example, if you claimed insurance, sought civil damages, or a court decided you should get compensation.',
+                'For example, if you sought civil damages, or a court decided you should get compensation.',
             type: 'boolean'
         },
         'q-applicant-applied-for-other-compensation-briefly-explain-why-not': {

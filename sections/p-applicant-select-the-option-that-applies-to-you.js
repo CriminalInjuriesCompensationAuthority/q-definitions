@@ -18,7 +18,8 @@ const output = {
                 <li>lost earnings because you were unable to work</li>
                 <li>physical injuries</li>
                 <li>pregnancy, sexually transmitted disease or loss of foetus</li>
-                <li>disabling mental injuries that are additional to the emotional distress you already suffered</li>
+                <li><a href="https://www.gov.uk/guidance/criminal-injuries-compensation-a-guide#special-expenses">some extra costs</a> you've had due to your injuries</li>
+                <li>disabling mental injuries that are additional to the emotional distress you've already suffered</li>
                 </ul>
                 </p>
                 {{ govukDetails({
@@ -31,7 +32,7 @@ const output = {
                 summaryText: "If you need help or support",
                 html: '
                     <p class="govuk-body">You can contact us for help with your application on 0300 003 3601. Select option 8.</p>
-                    <p class="govuk-body">Our phone lines are open Monday to Friday 8.30am to 5pm except Wednesday when they open at 10am.</p>
+                    <p class="govuk-body">Our phone lines are open Monday to Friday 8:30am to 5pm except Wednesday when they open at 10am.</p>
                     <p class="govuk-body">You can get practical or emotional support depending on where you live:</p>
                     <ul class="govuk-list govuk-list--bullet">
                        <li>in England and Wales <a href="https://www.victimandwitnessinformation.org.uk/">visit the Victim and Witness Information website</a></li>
