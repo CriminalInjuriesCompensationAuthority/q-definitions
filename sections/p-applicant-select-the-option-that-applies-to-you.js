@@ -17,7 +17,7 @@ const output = {
                 <ul class="govuk-list govuk-list--bullet">
                 <li>lost earnings because you were unable to work</li>
                 <li>physical injuries</li>
-                <li>pregnancy, sexually transmitted disease or loss of foetus</li>
+                <li>pregnancy, sexually transmitted disease, or loss of foetus</li>
                 <li><a href="https://www.gov.uk/guidance/criminal-injuries-compensation-a-guide#special-expenses">some extra costs</a> you've had due to your injuries</li>
                 <li>disabling mental injuries that are additional to the emotional distress you've already suffered</li>
                 </ul>
