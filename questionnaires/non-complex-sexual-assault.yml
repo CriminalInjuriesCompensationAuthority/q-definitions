@@ -3,7 +3,7 @@ start-page: p-applicant-declaration
 referrer: https://uat.claim-criminal-injuries-compensation.service.justice.gov.uk/start-page
 confirmation: p--confirmation
 summary: p--check-your-answers
-version: 0.2.8
+version: 0.2.9
 meta:
     onComplete:
         tasks:
