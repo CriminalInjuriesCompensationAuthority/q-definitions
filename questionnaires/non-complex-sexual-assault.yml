@@ -32,9 +32,7 @@ pages:
     - p-applicant-where-in-scotland-did-it-happen
     - p-applicant-where-in-wales-did-it-happen
     - p--you-need-to-contact-us
-    - p--which-english-police-force-is-investigating-the-crime
-    - p--which-police-scotland-division-is-investigating-the-crime
-    - p--which-welsh-police-force-is-investigating-the-crime
+    - p--which-police-force-is-investigating-the-crime
     - p-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police
     - p-offender-do-you-know-the-name-of-the-offender
     - p-offender-enter-offenders-name

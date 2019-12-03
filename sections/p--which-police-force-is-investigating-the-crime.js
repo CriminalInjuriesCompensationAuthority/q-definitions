@@ -1,11 +1,11 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    title: 'Which English police force is investigating the crime?',
+    title: 'Which police force is investigating the crime?',
     type: 'object',
-    required: ['q--which-english-police-force-is-investigating-the-crime'],
+    required: ['q--which-police-force-is-investigating-the-crime'],
     additionalProperties: false,
     properties: {
-        'q--which-english-police-force-is-investigating-the-crime': {
+        'q--which-police-force-is-investigating-the-crime': {
             type: 'integer',
             oneOf: [
                 {
@@ -291,13 +291,90 @@ const output = {
                 {
                     title: 'Wiltshire Police',
                     const: 10000295
+                },
+                {
+                    title: 'Police Scotland Argyll and West Dunbartonshire',
+                    const: 12607027
+                },
+                {
+                    title: 'Police Scotland Ayrshire',
+                    const: 12157147
+                },
+                {
+                    title: 'Police Scotland Dumfries and Galloway',
+                    const: 10000098
+                },
+                {
+                    title: 'Police Scotland Edinburgh',
+                    const: 13400412
+                },
+                {
+                    title: 'Police Scotland Fife',
+                    const: 10002424
+                },
+                {
+                    title: 'Police Scotland Forth Valley',
+                    const: 10000045
+                },
+                {
+                    title: 'Police Scotland Greater Glasgow',
+                    const: 12607023
+                },
+                {
+                    title: 'Police Scotland Highland and Islands',
+                    const: 10000193
+                },
+                {
+                    title: 'Police Scotland Lanarkshire',
+                    const: 12607028
+                },
+                {
+                    title: 'Police Scotland North East',
+                    const: 10000133
+                },
+                {
+                    title: 'Police Scotland Renfrewshire and Inverclyde',
+                    const: 12607026
+                },
+                {
+                    title: 'Police Scotland Tayside',
+                    const: 10000243
+                },
+                {
+                    title: 'Police Scotland The Lothians and Scottish Borders',
+                    const: 13400413
+                },
+                {
+                    title: 'Dyfed-Powys',
+                    const: 10000109
+                },
+                {
+                    title: 'Gwent',
+                    const: 10000147
+                },
+                {
+                    title: 'North Wales',
+                    const: 10000187
+                },
+                {
+                    title: 'South Wales',
+                    const: 10000215
                 }
             ]
+        },
+        'list-of-police-forces': {
+            description: `
+                {% from "components/details/macro.njk" import govukDetails %}
+                {{ govukDetails({
+                    summaryText: "Help with police forces",
+                    html: '<p>See a list of all <a href="/police" target="_blank">police forces in England, Scotland and Wales</a> (opens in a new tab)</p>'
+                }) }}
+            `
         }
     },
     errorMessage: {
         required: {
-            'q--which-english-police-force-is-investigating-the-crime':
+            'q--which-police-force-is-investigating-the-crime':
                 'Select a police force from the list'
         }
     }
