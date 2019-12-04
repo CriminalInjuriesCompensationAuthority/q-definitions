@@ -1,0 +1,5 @@
+p-applicant-british-citizen-or-eu-national-main:
+- goto: p-applicant-date-of-birth-main
+  if: [==, p-applicant-british-citizen-or-eu-national-main.q-applicant-british-citizen-or-eu-national, true]
+- goto: p-applicant-redirect-to-our-other-application
+  if: [==, p-applicant-british-citizen-or-eu-national-main.q-applicant-british-citizen-or-eu-national, false]

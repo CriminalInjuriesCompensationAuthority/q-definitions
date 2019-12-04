@@ -1,9 +1,9 @@
-template-name: minors-apply-for-compensation
+template-name: apply-for-compensation
 start-page: p-applicant-declaration
 referrer: https://claim-criminal-injuries-compensation.service.justice.gov.uk/start-page
 confirmation: p--confirmation
 summary: p--check-your-answers
-version: 0.1.0
+version: 0.2.11
 meta:
     onComplete:
         tasks:
@@ -18,7 +18,7 @@ pages:
     - p-applicant-who-are-you-applying-for
     - p-applicant-were-you-a-victim-of-sexual-assault-or-abuse
     - p--before-you-continue
-    - p-applicant-select-option
+    - p-applicant-select-the-option-that-applies-to-you
     - p--was-the-crime-reported-to-police
     - p--when-was-the-crime-reported-to-police
     - p--whats-the-crime-reference-number
@@ -32,17 +32,20 @@ pages:
     - p-applicant-where-in-scotland-did-it-happen
     - p-applicant-where-in-wales-did-it-happen
     - p--you-need-to-contact-us
+    - p--which-english-police-force-is-investigating-the-crime
+    - p--which-police-scotland-division-is-investigating-the-crime
+    - p--which-welsh-police-force-is-investigating-the-crime
     - p-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police
     - p-offender-do-you-know-the-name-of-the-offender
     - p-offender-enter-offenders-name
-    - p-offender-contact
-    - p-applicant-previous-application
-    - p-applicant-other-compensation
+    - p-offender-describe-contact-with-offender
+    - p-applicant-have-you-applied-to-us-before
+    - p-applicant-have-you-applied-for-or-received-any-other-compensation
     - p-applicant-other-compensation-details
-    - p-applicant-name
+    - p-applicant-enter-your-name
     - p-applicant-have-you-been-known-by-any-other-names
-    - p-applicant-other-names
-    - p-applicant-date-of-birth
+    - p-applicant-what-other-names-have-you-used
+    - p-applicant-enter-your-date-of-birth
     - p-applicant-enter-your-email-address
     - p-applicant-enter-your-address
     - p-applicant-enter-your-telephone-number
@@ -50,17 +53,4 @@ pages:
     - p--confirmation
     - p-applicant-redirect-to-our-other-application
     - p-applicant-you-cannot-get-compensation
-    - p-main-applying-for-child
-    - p-applicant-british-citizen-or-eu-national-main
-    - p-applicant-date-of-birth-main
-    - p--before-you-continue-main
-    - p-applicant-select-option-main
-    - p-main-cannot-apply-for-over-18s
-    - p-applicant-name-main
-    - p-applicant-have-you-been-known-by-any-other-names-main
-    - p-applicant-other-names-main
-    - p-offender-contact-main
-    - p-police-force
-    - p-applicant-other-compensation-main
-    - p-applicant-other-compensation-details-main
     - system

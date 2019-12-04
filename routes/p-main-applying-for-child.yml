@@ -1,0 +1,5 @@
+p-main-applying-for-child:
+- goto: p-applicant-british-citizen-or-eu-national-main
+  if: [==, p-main-applying-for-child.q-main-applying-for-child, true]
+- goto: p-applicant-redirect-to-our-other-application
+  if: [==, p-main-applying-for-child.q-main-applying-for-child, false]

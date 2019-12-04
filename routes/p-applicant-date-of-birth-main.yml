@@ -1,0 +1,4 @@
+p-applicant-date-of-birth-main:
+- goto: p--before-you-continue-main
+  if: [dateLessThanEighteenYearsAgo, p-applicant-date-of-birth-main.q-applicant-enter-your-date-of-birth]
+- goto: p-main-cannot-apply-for-over-18s

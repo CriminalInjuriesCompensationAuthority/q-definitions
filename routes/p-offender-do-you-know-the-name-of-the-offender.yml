@@ -1,5 +1,5 @@
 p-offender-do-you-know-the-name-of-the-offender:
-- goto: p-applicant-have-you-applied-to-us-before
-  if: [==, q-offender-do-you-know-the-name-of-the-offender, false]
+- goto: p-applicant-previous-application
+  if: [==, p-offender-do-you-know-the-name-of-the-offender.q-offender-do-you-know-the-name-of-the-offender, false]
 - goto: p-offender-enter-offenders-name
-  if: [==, q-offender-do-you-know-the-name-of-the-offender, true]
+  if: [==, p-offender-do-you-know-the-name-of-the-offender.q-offender-do-you-know-the-name-of-the-offender, true]

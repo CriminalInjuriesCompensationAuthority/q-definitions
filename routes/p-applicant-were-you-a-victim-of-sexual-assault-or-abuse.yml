@@ -1,5 +1,5 @@
 p-applicant-were-you-a-victim-of-sexual-assault-or-abuse:
 - goto: p-applicant-redirect-to-our-other-application
-  if: [==, q-applicant-were-you-a-victim-of-sexual-assault-or-abuse, false]
-- goto: p--before-you-continue
-  if: [==, q-applicant-were-you-a-victim-of-sexual-assault-or-abuse, true]
+  if: [==, p-applicant-were-you-a-victim-of-sexual-assault-or-abuse.q-applicant-were-you-a-victim-of-sexual-assault-or-abuse, false]
+- goto: p--was-the-crime-reported-to-police
+  if: [==, p-applicant-were-you-a-victim-of-sexual-assault-or-abuse.q-applicant-were-you-a-victim-of-sexual-assault-or-abuse, true]

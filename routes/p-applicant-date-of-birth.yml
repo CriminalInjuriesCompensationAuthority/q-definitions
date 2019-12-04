@@ -1,0 +1,4 @@
+p-applicant-date-of-birth:
+- goto: p-applicant-redirect-to-our-other-application
+  if: [dateLessThanEighteenYearsAgo, p-applicant-date-of-birth.q-applicant-enter-your-date-of-birth]
+- goto: p-applicant-enter-your-email-address

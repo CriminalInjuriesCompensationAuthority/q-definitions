@@ -1,0 +1,4 @@
+p-applicant-previous-application:
+- goto: p-applicant-other-compensation-main
+  if: [==, p-main-applying-for-child.q-main-applying-for-child, true]
+- goto: p-applicant-other-compensation

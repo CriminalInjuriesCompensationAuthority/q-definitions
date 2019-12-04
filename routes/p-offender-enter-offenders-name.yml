@@ -1,2 +1,5 @@
 p-offender-enter-offenders-name:
-- goto: p-offender-describe-contact-with-offender
+- goto: p-offender-contact
+  if: [==, p-applicant-who-are-you-applying-for.q-applicant-who-are-you-applying-for, myself]
+- goto: p-offender-contact-main
+  if: [==, p-main-applying-for-child.q-main-applying-for-child, true]

@@ -9,7 +9,7 @@ const output = {
     },
     properties: {
         'q-applicant-have-you-applied-to-us-before': {
-            title: 'Have you applied to us before?',
+            title: 'Is this the first claim for this incident?',
             type: 'boolean'
         },
         'q-enter-your-previous-reference-number': {
@@ -24,15 +24,15 @@ const output = {
     required: ['q-applicant-have-you-applied-to-us-before'],
     allOf: [
         {
-            $ref: '#/definitions/if-true-then-q-enter-your-previous-reference-number-is-required'
+            $ref: '#/definitions/if-false-then-q-enter-your-previous-reference-number-is-required'
         }
     ],
     definitions: {
-        'if-true-then-q-enter-your-previous-reference-number-is-required': {
+        'if-false-then-q-enter-your-previous-reference-number-is-required': {
             if: {
                 properties: {
                     'q-applicant-have-you-applied-to-us-before': {
-                        const: true
+                        const: false
                     }
                 }
             },
@@ -49,7 +49,7 @@ const output = {
     errorMessage: {
         required: {
             'q-applicant-have-you-applied-to-us-before':
-                'Select yes if you have applied to us before'
+                'Select no if you have applied to us before'
         }
     }
 };
