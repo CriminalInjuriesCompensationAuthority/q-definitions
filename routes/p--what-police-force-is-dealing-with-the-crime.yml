@@ -1,4 +1,0 @@
-p--what-police-force-is-dealing-with-the-crime:
-- goto: p-applicant-select-reasons-for-the-delay-in-reporting-the-crime-to-police
-  if: [dateGreaterThanTwoDays, q--when-was-the-crime-reported-to-police]
-- goto: p-offender-do-you-know-the-name-of-the-offender

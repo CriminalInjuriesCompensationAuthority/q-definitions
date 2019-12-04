@@ -1,5 +1,5 @@
 p-applicant-have-you-applied-for-or-received-any-other-compensation:
 - goto: p-applicant-other-compensation-details
-  if: [==, q-applicant-have-you-applied-for-or-received-any-other-compensation, true]
-- goto: p-applicant-enter-your-name
-  if: [==, q-applicant-have-you-applied-for-or-received-any-other-compensation, false]
+  if: [==, p-applicant-have-you-applied-for-or-received-any-other-compensation.q-applicant-have-you-applied-for-or-received-any-other-compensation, true]
+- goto: p-applicant-name
+  if: [==, p-applicant-have-you-applied-for-or-received-any-other-compensation.q-applicant-have-you-applied-for-or-received-any-other-compensation, false]

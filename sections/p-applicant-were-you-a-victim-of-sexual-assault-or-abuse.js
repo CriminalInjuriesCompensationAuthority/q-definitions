@@ -6,7 +6,7 @@ const output = {
     properties: {
         'q-applicant-were-you-a-victim-of-sexual-assault-or-abuse': {
             type: 'boolean',
-            title: 'Were you a victim of sexual assault or abuse?'
+            title: 'Is your claim about sexual assault or abuse?'
         }
     },
     errorMessage: {

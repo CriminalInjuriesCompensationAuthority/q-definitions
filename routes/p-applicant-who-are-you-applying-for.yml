@@ -1,5 +1,5 @@
 p-applicant-who-are-you-applying-for:
-- goto: p-applicant-redirect-to-our-other-application
-  if: [==, q-applicant-who-are-you-applying-for, someone-else]
-- goto: p-applicant-were-you-a-victim-of-sexual-assault-or-abuse
-  if: [==, q-applicant-who-are-you-applying-for, myself]
+- goto: p-main-applying-for-child
+  if: [==, p-applicant-who-are-you-applying-for.q-applicant-who-are-you-applying-for, someone-else]
+- goto: p-applicant-british-citizen-or-eu-national
+  if: [==, p-applicant-who-are-you-applying-for.q-applicant-who-are-you-applying-for, myself]

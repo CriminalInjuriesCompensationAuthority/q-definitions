@@ -1,2 +1,5 @@
 p-applicant-other-compensation-details:
-- goto: p-applicant-enter-your-name
+- goto: p-applicant-name
+  if: [==, p-applicant-who-are-you-applying-for.q-applicant-who-are-you-applying-for, myself]
+- goto: p-applicant-enter-your-address
+  if: [==, p-main-applying-for-child.q-main-applying-for-child, true]

@@ -1,4 +1,4 @@
 p-applicant-when-did-the-crime-stop:
 - goto: p-applicant-select-reasons-for-the-delay-in-making-your-application
-  if: [dateExceedsTwoYearsFromNow, q-applicant-when-did-the-crime-stop]
+  if: [dateExceedsTwoYearsFromNow, p-applicant-when-did-the-crime-stop.q-applicant-when-did-the-crime-stop]
 - goto: p-applicant-where-did-the-crime-happen
