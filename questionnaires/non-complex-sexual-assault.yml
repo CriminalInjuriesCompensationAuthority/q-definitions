@@ -3,7 +3,7 @@ start-page: p-applicant-declaration
 referrer: https://claim-criminal-injuries-compensation.service.justice.gov.uk/start-page
 confirmation: p--confirmation
 summary: p--check-your-answers
-version: 0.0.1
+version: 0.1.0
 meta:
     onComplete:
         tasks:
