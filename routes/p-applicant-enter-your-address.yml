@@ -1,2 +1,5 @@
 p-applicant-enter-your-address:
 - goto: p-applicant-enter-your-telephone-number
+  if: [==, q-applicant-confirmation-method, email]
+- goto: p-applicant-enter-your-email-address
+  if: [==, q-applicant-confirmation-method, sms]

@@ -1,2 +1,2 @@
 p-applicant-enter-your-email-address:
-- goto: p-applicant-enter-your-address
+  - goto: p--check-your-answers

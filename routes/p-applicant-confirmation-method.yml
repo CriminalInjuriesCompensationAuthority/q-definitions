@@ -1,0 +1,4 @@
+p-applicant-confirmation-method:
+- goto: p-applicant-redirect-to-our-other-application
+  if: [==, q-applicant-confirmation-method, none]
+- goto: p--before-you-continue

@@ -1,5 +1,5 @@
 p-applicant-were-you-a-victim-of-sexual-assault-or-abuse:
 - goto: p-applicant-redirect-to-our-other-application
   if: [==, q-applicant-were-you-a-victim-of-sexual-assault-or-abuse, false]
-- goto: p--before-you-continue
+- goto: p-applicant-confirmation-method
   if: [==, q-applicant-were-you-a-victim-of-sexual-assault-or-abuse, true]
