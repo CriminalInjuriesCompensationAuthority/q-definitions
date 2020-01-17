@@ -7,9 +7,15 @@ version: 0.2.11
 meta:
     onComplete:
         tasks:
-            - emailTemplateId: cb79653c-cf6e-44d4-8c03-087ba21cfd01
-              emailTemplatePlaceholderMap:
-                applicantEmail: "/answers/p-applicant-enter-your-email-address/q-applicant-enter-your-email-address"
+            - type: sendEmail
+              templateId: cb79653c-cf6e-44d4-8c03-087ba21cfd01
+              templatePlaceholderMap:
+                emailAddress: "/answers/p-applicant-enter-your-email-address/q-applicant-enter-your-email-address"
+                caseReference: "/answers/system/case-reference"
+            - type: sendSms
+              templateId: 5d113305-bbe1-47c1-91b9-1b734b444003
+              templatePlaceholderMap:
+                phoneNumber: "/answers/p-applicant-enter-your-telephone-number/q-applicant-enter-your-telephone-number"
                 caseReference: "/answers/system/case-reference"
 pages:
     - p-applicant-declaration
