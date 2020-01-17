@@ -1,7 +1,6 @@
 const output = {
     $schema: 'http://json-schema.org/draft-07/schema#',
     type: 'object',
-    required: ['q-applicant-enter-your-telephone-number'],
     additionalProperties: false,
     properties: {
         'q-applicant-enter-your-telephone-number': {
