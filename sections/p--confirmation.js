@@ -6,12 +6,21 @@ const output = {
     properties: {
         confirmation: {
             description: `
+                    {% set mobilePhoneNumber = "||/answers/p-applicant-confirmation-method/q-applicant-enter-your-telephone-number||" %}
+                    {% set emailAddress = "||/answers/p-applicant-confirmation-method/q-applicant-enter-your-email-address||" %}
+                    
+                    {% if mobilePhoneNumber %}
+                        {% set contactMethod =  mobilePhoneNumber %}
+                    {% else %}
+                        {% set contactMethod =  emailAddress %}
+                    {% endif %}
+
                     {{ govukPanel({
                         titleText: "Application submitted",
-                        html: "<p>Your reference number is <br /><strong>||/answers/system/case-reference||</strong></p><p>We've sent your reference number to <strong>confirmation method</strong></p>"
+                        html: "<p>Your reference number is <br /><strong>||/answers/system/case-reference||</strong></p>"
                     }) }}
                     
-                    <p class="govuk-body-l">Thank you for submitting your application.</p>
+                    <p class="govuk-body-l">We've sent your reference number to <strong>{{ contactMethod }}</strong></p>
                     <h2 class="govuk-heading-m">What happens next</h2>
                     <p class="govuk-body">We will:</p>
                     <ul class="govuk-list govuk-list--bullet">

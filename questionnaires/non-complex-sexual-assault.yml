@@ -10,11 +10,6 @@ meta:
           - type: sendEmail
             templateId: cb79653c-cf6e-44d4-8c03-087ba21cfd01
             templatePlaceholderMap:
-              emailAddress: "/answers/p-applicant-enter-your-email-address/q-applicant-enter-your-email-address"
-              caseReference: "/answers/system/case-reference"
-          - type: sendEmail
-            templateId: cb79653c-cf6e-44d4-8c03-087ba21cfd01
-            templatePlaceholderMap:
               emailAddress: "/answers/p-applicant-confirmation-method/q-applicant-enter-your-email-address"
               caseReference: "/answers/system/case-reference"
           - type: sendSms
