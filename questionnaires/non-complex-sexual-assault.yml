@@ -13,7 +13,7 @@ meta:
               emailAddress: "/answers/p-applicant-confirmation-method/q-applicant-enter-your-email-address"
               caseReference: "/answers/system/case-reference"
           - type: sendSms
-            templateId: 5d113305-bbe1-47c1-91b9-1b734b444003
+            templateId: 3c847bb8-957a-4bba-9fad-090657bb5c71
             templatePlaceholderMap:
               phoneNumber: "/answers/p-applicant-confirmation-method/q-applicant-enter-your-telephone-number"
               caseReference: "/answers/system/case-reference"

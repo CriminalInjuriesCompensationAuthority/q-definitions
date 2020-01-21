@@ -7,7 +7,7 @@ const output = {
             type: 'string',
             title: 'Enter your email address',
             description:
-                'We may use this to contact you about your application, for example, to request more information.',
+                'We may use this to contact you if we need to clarify something on your application form (optional).',
             maxLength: 50,
             format: 'email',
             errorMessage: {

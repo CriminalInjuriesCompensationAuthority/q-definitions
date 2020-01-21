@@ -7,7 +7,7 @@ const output = {
             type: 'string',
             title: 'Enter your telephone number',
             description:
-                'We may use this to contact you if we need to clarify something on your application form.',
+                'We may use this to contact you if we need to clarify something on your application form (optional).',
             maxLength: 20,
             pattern: '^[\\+\\d][\\d \\(\\)\\+\\-\\#]{7,19}$',
             errorMessage: {
