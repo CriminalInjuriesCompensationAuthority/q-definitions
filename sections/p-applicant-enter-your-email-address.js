@@ -12,14 +12,13 @@ const output = {
             format: 'email',
             errorMessage: {
                 maxLength: 'Email address must be 50 characters or less',
-                format: 'Enter your email address, for example john.smith@email.com'
+                format: 'Enter an email address in the correct format, like name@example.com'
             }
         }
     },
     errorMessage: {
         required: {
-            'q-applicant-enter-your-email-address':
-                'Enter an email address in the correct format, like name@example.com'
+            'q-applicant-enter-your-email-address': 'Enter an email address'
         }
     }
 };

@@ -34,7 +34,7 @@ const output = {
             format: 'email',
             errorMessage: {
                 maxLength: 'Email address must be 50 characters or less',
-                format: 'Enter your email address, for example john.smith@email.com'
+                format: 'Enter an email address in the correct format, like name@example.com'
             }
         },
         'q-applicant-enter-your-telephone-number': {
@@ -44,9 +44,9 @@ const output = {
             pattern: '^[\\+\\d][\\d \\(\\)\\+\\-\\#]{7,19}$',
             format: 'x-mobilePhoneNumber',
             errorMessage: {
-                format: 'Enter a mobile phone number, 07700 900 982 or +447700 900 982',
+                format: 'Enter a UK mobile phone number, like 07700 900 982 or +44 7700 900 982',
                 maxLength: 'Telephone number must be 20 characters or less',
-                pattern: 'Enter a mobile phone number, 07700 900 982 or +447700 900 982'
+                pattern: 'Enter a UK mobile phone number, like 07700 900 982 or +44 7700 900 982'
             }
         }
     },
@@ -79,8 +79,7 @@ const output = {
                 },
                 errorMessage: {
                     required: {
-                        'q-applicant-enter-your-email-address':
-                            'Enter your email address, for example john.smith@email.com'
+                        'q-applicant-enter-your-email-address': 'Enter an email address'
                     }
                 }
             }
@@ -104,8 +103,7 @@ const output = {
                 },
                 errorMessage: {
                     required: {
-                        'q-applicant-enter-your-telephone-number':
-                            'Enter your mobile phone number, for example 07700 900 982'
+                        'q-applicant-enter-your-telephone-number': 'Enter a mobile phone number'
                     }
                 }
             }
@@ -114,7 +112,7 @@ const output = {
     errorMessage: {
         required: {
             'q-applicant-confirmation-method':
-                'Select how you want to receive your confirmation message'
+                'Select how you want to get your confirmation message'
         }
     },
     meta: {
